@@ -15,6 +15,8 @@ import { NavButton } from "../NavButton";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { GrGithub } from "react-icons/gr";
+import { LiaLinkedinIn } from "react-icons/lia";
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +29,7 @@ export function NavBar() {
     "px-4",
     "flex items-center justify-start gap-2 cursor-pointer",
     "shrink-0",
-    "text-violet-100 font-semibold text-md"
+    "text-violet-100 font-semibold text-xl"
   );
 
   return (
@@ -41,37 +43,57 @@ export function NavBar() {
             isOpen ? "translate-y-0" : "-translate-y-full"
           )}
         >
-          <div className="w-full flex justify-end">
-            <NavButton
-              onClick={() => {
-                setIsOpen(false);
-              }}
-            >
-              <XIcon />
-            </NavButton>
-          </div>
+          <div className="h-full flex flex-col justify-between items-center">
+            <div className="w-full flex justify-end">
+              <NavButton
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                <XIcon />
+              </NavButton>
+            </div>
 
-          <div className="flex flex-col gap-4 mt-15">
-            <Link className={linkClasses} href={"#"}>
-              <UserCircleIcon />
-              About
-            </Link>
-            <Link className={linkClasses} href={"#"}>
-              <BriefcaseIcon />
-              Experiences
-            </Link>
-            <Link className={linkClasses} href={"#"}>
-              <CodeIcon />
-              Projects
-            </Link>
-            <Link className={linkClasses} href={"#"}>
-              <MailIcon />
-              Contact
-            </Link>
-            <Link className={linkClasses} href={"#"}>
-              <FileTextIcon />
-              Curriculum
-            </Link>
+            <div className="flex flex-col gap-4 mt-15">
+              <Link className={linkClasses} href={"#"}>
+                <UserCircleIcon />
+                About
+              </Link>
+              <Link className={linkClasses} href={"#"}>
+                <BriefcaseIcon />
+                Experiences
+              </Link>
+              <Link className={linkClasses} href={"#"}>
+                <CodeIcon />
+                Projects
+              </Link>
+              <Link className={linkClasses} href={"#"}>
+                <MailIcon />
+                Contact
+              </Link>
+              <Link className={linkClasses} href={"#"}>
+                <FileTextIcon />
+                Curriculum
+              </Link>
+            </div>
+
+            <div className="flex mb-4">
+              <NavButton>
+                <a target="_blank" href={"https://github.com/joaocarlos-dev"}>
+                  <GrGithub size={30} />
+                </a>
+              </NavButton>
+              <NavButton>
+                <a
+                  target="_blank"
+                  href={
+                    "https://www.linkedin.com/in/joao-henrique-jorge-carlos/"
+                  }
+                >
+                  <LiaLinkedinIn size={30} />
+                </a>
+              </NavButton>
+            </div>
           </div>
         </div>
 
