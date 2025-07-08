@@ -27,7 +27,7 @@ export function NavBar() {
     "px-4",
     "flex items-center justify-start gap-2 cursor-pointer",
     "shrink-0",
-    "text-violet-100"
+    "text-violet-100 font-semibold text-md"
   );
 
   return (
@@ -37,7 +37,7 @@ export function NavBar() {
           className={clsx(
             "h-screen w-1/2 bg-violet-500 absolute top-0 left-0",
             "transition-transform duration-500 transform",
-            "z-50 flex flex-col p-4",
+            "z-50 flex flex-col items-center p-4",
             isOpen ? "translate-y-0" : "-translate-y-full"
           )}
         >
