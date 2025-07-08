@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Container } from "@/components/Container";
-import { Header } from "@/components/Header";
+import { NavBar } from "@/components/NavBar";
 
 export const metadata: Metadata = {
   title: {
@@ -20,7 +20,7 @@ export default async function RootLayout({
     <html lang="en">
       <body>
         <Container>
-          <Header/>
+          <NavBar />
           {children}
         </Container>
       </body>
