@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 type NavButtonProps = {} & React.ComponentProps<"button">;
 
-export function NavButton({ ...props }: NavButtonProps) {
+export function NavButton({ children, ...props }: NavButtonProps) {
   return (
     <button
       className={clsx(
@@ -12,6 +12,8 @@ export function NavButton({ ...props }: NavButtonProps) {
         "hover:cursor-pointer"
       )}
       {...props}
-    />
+    >
+      {children}
+    </button>
   );
 }
