@@ -8,15 +8,58 @@ import {
   MailIcon,
   MenuIcon,
   MoonStarIcon,
+  SunIcon,
   UserCircleIcon,
   XIcon,
 } from "lucide-react";
-import { NavButton } from "../NavButton";
+import { NavButton } from "./NavButton";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { GrGithub } from "react-icons/gr";
 import { LiaLinkedinIn } from "react-icons/lia";
+import { NavDropdownButton } from "./NavDropdownButton";
+
+export function NavLinks() {
+  const linkClasses = clsx(
+    "px-3",
+    "flex items-center justify-start gap-2 cursor-pointer",
+    "text-violet-100 font-semibold text-xl",
+    "md:text-[1rem]",
+    "transition ease-in-out duration-400",
+    "hover:bg-violet-300 md:rounded-2xl"
+  );
+
+  return (
+    <div
+      className={clsx(
+        "flex flex-col gap-4 mt-15",
+        "md:flex md:flex-row md:mt-0 md:gap-1 md:flex-wrap"
+      )}
+    >
+      <Link className={linkClasses} href={"#"}>
+        <UserCircleIcon />
+        About
+      </Link>
+      <Link className={linkClasses} href={"#"}>
+        <BriefcaseIcon />
+        Experiences
+      </Link>
+      <Link className={linkClasses} href={"#"}>
+        <CodeIcon />
+        Projects
+      </Link>
+      <Link className={linkClasses} href={"#"}>
+        <MailIcon />
+        Contact
+      </Link>
+      <Link className={linkClasses} href={"#"}>
+        <FileTextIcon />
+        Curriculum
+      </Link>
+    </div>
+  );
+}
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,13 +67,6 @@ export function NavBar() {
   useEffect(() => {
     setIsOpen(false);
   }, []);
-
-  const linkClasses = clsx(
-    "px-4",
-    "flex items-center justify-start gap-2 cursor-pointer",
-    "shrink-0",
-    "text-violet-100 font-semibold text-xl"
-  );
 
   return (
     <nav>
@@ -54,28 +90,7 @@ export function NavBar() {
               </NavButton>
             </div>
 
-            <div className="flex flex-col gap-4 mt-15">
-              <Link className={linkClasses} href={"#"}>
-                <UserCircleIcon />
-                About
-              </Link>
-              <Link className={linkClasses} href={"#"}>
-                <BriefcaseIcon />
-                Experiences
-              </Link>
-              <Link className={linkClasses} href={"#"}>
-                <CodeIcon />
-                Projects
-              </Link>
-              <Link className={linkClasses} href={"#"}>
-                <MailIcon />
-                Contact
-              </Link>
-              <Link className={linkClasses} href={"#"}>
-                <FileTextIcon />
-                Curriculum
-              </Link>
-            </div>
+            <NavLinks />
 
             <div className="flex mb-4">
               <NavButton>
@@ -101,25 +116,38 @@ export function NavBar() {
           className={clsx(
             "bg-violet-500",
             "w-[90%] h-16 rounded-3xl",
-            "flex flex-row items-center justify-between",
-            "relative overflow-hidden"
+            "flex flex-row items-center justify-between"
           )}
         >
-          <NavButton
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          >
-            <MenuIcon />
-          </NavButton>
+          <div className="md:hidden">
+            <NavButton
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              <MenuIcon />
+            </NavButton>
+          </div>
 
-          <div className="flex z-10">
-            <NavButton>
-              <LanguagesIcon />
-            </NavButton>
-            <NavButton>
-              <MoonStarIcon />
-            </NavButton>
+          <div className="hidden md:flex md:flex-1 h-full">
+            <NavLinks />
+          </div>
+
+          <div className="flex z-10 ">
+            <NavDropdownButton
+              label={<LanguagesIcon />}
+              options={[
+                { label: "EN", onClick: () => {} },
+                { label: "PT", onClick: () => {} },
+              ]}
+            />
+            <NavDropdownButton
+              label={<MoonStarIcon />}
+              options={[
+                { icon: <MoonStarIcon />, onClick: () => {} },
+                { icon: <SunIcon />, onClick: () => {} },
+              ]}
+            ></NavDropdownButton>
           </div>
         </div>
       </div>
