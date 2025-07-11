@@ -34,13 +34,15 @@ export function NavLinks({ t }: NavLinksProps) {
     "text-violet-100 font-semibold text-xl",
     "md:text-[1rem]",
     "transition ease-in-out duration-400",
-    "hover:bg-violet-300 md:rounded-2xl"
+    "hover:bg-violet-300 md:rounded-2xl rounded-xl py-1",
+    "md:dark:text-dark-text",
+    "dark:hover:bg-slate-700 md:dark:hover:bg-slate-400"
   );
 
   return (
     <div
       className={clsx(
-        "flex flex-col gap-4 mt-15",
+        "flex flex-col gap-4 mt-15 ",
         "md:flex md:flex-row md:mt-0 md:gap-1 md:flex-wrap"
       )}
     >
@@ -82,9 +84,10 @@ export function NavBar() {
       <div className="flex justify-center pt-5">
         <div
           className={clsx(
-            "h-screen w-1/2 bg-violet-500 absolute top-0 left-0",
+            "h-screen w-1/2 bg-nav-background absolute top-0 left-0",
             "transition-transform duration-500 transform",
             "z-50 flex flex-col items-center p-4",
+            "dark:bg-dark-background dark:shadow-2xl",
             isOpen ? "translate-y-0" : "-translate-y-full"
           )}
         >
@@ -123,9 +126,10 @@ export function NavBar() {
 
         <div
           className={clsx(
-            "bg-violet-500",
+            "bg-nav-background",
             "w-[90%] h-16 rounded-3xl",
-            "flex flex-row items-center justify-between"
+            "flex flex-row items-center justify-between",
+            "dark:bg-dark-nav-background"
           )}
         >
           <div className="md:hidden">

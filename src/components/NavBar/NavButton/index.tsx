@@ -11,7 +11,8 @@ export function NavButton({ children, ...props }: NavButtonProps) {
         "[&_svg]:text-violet-800",
         "hover:cursor-pointer",
         "transition ease-in-out duration-400",
-        "hover:bg-violet-300"
+        "hover:bg-violet-300",
+        "dark:bg-dark-btn-background dark:[&_svg]:text-background dark:hover:bg-slate-700"
       )}
       {...props}
     >

@@ -34,6 +34,8 @@ export function NavDropdownButton({ label, options }: NavDropdownButton) {
           "bg-violet-100 w-10 h-10 rounded-xl",
           "text-violet-800",
           "hover:bg-violet-300 transition",
+          "dark:hover:bg-slate-700",
+          "dark:bg-dark-btn-background dark:[&_svg]:text-background",
           "hover:cursor-pointer"
         )}
       >
