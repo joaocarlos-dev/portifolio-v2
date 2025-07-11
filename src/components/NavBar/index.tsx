@@ -14,13 +14,14 @@ import {
 } from "lucide-react";
 import { NavButton } from "./NavButton";
 import clsx from "clsx";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { GrGithub } from "react-icons/gr";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { NavDropdownButton } from "./NavDropdownButton";
 import { useTranslation } from "react-i18next";
 import "../../locales/i18n";
+import { useTheme } from "@/app/providers/ThemeProvider";
 
 interface NavLinksProps {
   t: (key: string) => string;
@@ -70,14 +71,11 @@ export function NavLinks({ t }: NavLinksProps) {
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
+  const { theme, toggleTheme } = useTheme();
 
   const changeLanguage = (lng: string | undefined) => {
     i18n.changeLanguage(lng);
   };
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, []);
 
   return (
     <nav>
@@ -162,13 +160,9 @@ export function NavBar() {
                 },
               ]}
             />
-            <NavDropdownButton
-              label={<MoonStarIcon />}
-              options={[
-                { icon: <MoonStarIcon />, onClick: () => {} },
-                { icon: <SunIcon />, onClick: () => {} },
-              ]}
-            ></NavDropdownButton>
+            <NavButton onClick={toggleTheme}>
+              {theme === "light" ? <SunIcon /> : <MoonStarIcon />}
+            </NavButton>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ type ContainerProps = {
 
 export function Container({ children }: ContainerProps) {
   return (
-    <div className="bg-slate-100 min-h-screen">
+    <div className="bg-background min-h-screen dark:bg-dark-background">
       <div className="max-w-screen-lg mx-auto ">{children}</div>
     </div>
   );
