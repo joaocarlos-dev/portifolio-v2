@@ -19,8 +19,14 @@ import Link from "next/link";
 import { GrGithub } from "react-icons/gr";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { NavDropdownButton } from "./NavDropdownButton";
+import { useTranslation } from "react-i18next";
+import "../../locales/i18n";
 
-export function NavLinks() {
+interface NavLinksProps {
+  t: (key: string) => string;
+}
+
+export function NavLinks({ t }: NavLinksProps) {
   const linkClasses = clsx(
     "px-3",
     "flex items-center justify-start gap-2 cursor-pointer",
@@ -39,23 +45,23 @@ export function NavLinks() {
     >
       <Link className={linkClasses} href={"#"}>
         <UserCircleIcon />
-        About
+        {t("about")}
       </Link>
       <Link className={linkClasses} href={"#"}>
         <BriefcaseIcon />
-        Experiences
+        {t("experiences")}
       </Link>
       <Link className={linkClasses} href={"#"}>
         <CodeIcon />
-        Projects
+        {t("projects")}
       </Link>
       <Link className={linkClasses} href={"#"}>
         <MailIcon />
-        Contact
+        {t("contact")}
       </Link>
       <Link className={linkClasses} href={"#"}>
         <FileTextIcon />
-        Curriculum
+        {t("curriculum")}
       </Link>
     </div>
   );
@@ -63,6 +69,11 @@ export function NavLinks() {
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng: string | undefined) => {
+    i18n.changeLanguage(lng);
+  };
 
   useEffect(() => {
     setIsOpen(false);
@@ -90,7 +101,7 @@ export function NavBar() {
               </NavButton>
             </div>
 
-            <NavLinks />
+            <NavLinks t={t} />
 
             <div className="flex mb-4">
               <NavButton>
@@ -130,15 +141,25 @@ export function NavBar() {
           </div>
 
           <div className="hidden md:flex md:flex-1 h-full">
-            <NavLinks />
+            <NavLinks t={t} />
           </div>
 
           <div className="flex z-10 ">
             <NavDropdownButton
               label={<LanguagesIcon />}
               options={[
-                { label: "EN", onClick: () => {} },
-                { label: "PT", onClick: () => {} },
+                {
+                  label: "EN",
+                  onClick: () => {
+                    changeLanguage("en");
+                  },
+                },
+                {
+                  label: "PT",
+                  onClick: () => {
+                    changeLanguage("pt");
+                  },
+                },
               ]}
             />
             <NavDropdownButton
