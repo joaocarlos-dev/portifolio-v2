@@ -32,7 +32,7 @@ export function NavLinks({ t }: NavLinksProps) {
     "px-3",
     "flex items-center justify-start gap-2 cursor-pointer",
     "text-violet-100 font-semibold text-xl",
-    "md:text-[1.2rem]",
+    "md:text-[1.1rem]",
     "transition ease-in-out duration-400",
     "hover:bg-violet-400 md:rounded-2xl rounded-xl py-1",
     "md:dark:text-dark-text",
@@ -46,23 +46,23 @@ export function NavLinks({ t }: NavLinksProps) {
         "md:flex md:flex-row md:mt-0 md:gap-1 md:flex-wrap"
       )}
     >
-      <Link className={linkClasses} href={"#"}>
+      <Link className={linkClasses} href={"about"}>
         <UserCircleIcon />
         {t("about")}
       </Link>
-      <Link className={linkClasses} href={"#"}>
+      <Link className={linkClasses} href={"experiences"}>
         <BriefcaseIcon />
         {t("experiences")}
       </Link>
-      <Link className={linkClasses} href={"#"}>
+      <Link className={linkClasses} href={"projects"}>
         <CodeIcon />
         {t("projects")}
       </Link>
-      <Link className={linkClasses} href={"#"}>
+      <Link className={linkClasses} href={"contact"}>
         <MailIcon />
         {t("contact")}
       </Link>
-      <Link className={linkClasses} href={"#"}>
+      <Link className={linkClasses} href={"curriculum"}>
         <FileTextIcon />
         {t("curriculum")}
       </Link>
