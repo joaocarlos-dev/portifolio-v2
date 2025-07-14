@@ -32,7 +32,7 @@ export function NavLinks({ t }: NavLinksProps) {
     "px-3",
     "flex items-center justify-start gap-2 cursor-pointer",
     "text-violet-100 font-semibold text-xl",
-    "md:text-[1rem]",
+    "md:text-[1.2rem]",
     "transition ease-in-out duration-400",
     "hover:bg-violet-400 md:rounded-2xl rounded-xl py-1",
     "md:dark:text-dark-text",
