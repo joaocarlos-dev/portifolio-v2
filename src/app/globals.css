@@ -2,10 +2,11 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-background: oklch(96.8% 0.007 247.896);
+  --color-background: #33126e;
   --color-nav-background: oklch(60.6% 0.25 292.717);
-  --color-dark-background: oklch(27.9% 0.041 260.031);
-  --color-dark-nav-background: oklch(86.9% 0.022 252.894);
-  --color-dark-text: oklch(21% 0.006 285.885);
-  --color-dark-btn-background: oklch(55.4% 0.046 257.417);
+  --color-dark-background: #33126e;
+  --color-dark-nav-background: #ffffff;
+  --color-dark-text: #33126e;
+  --color-dark-btn-background: #6c4aa7;
+  --color-dark-svg: #e5d6ff;
 }

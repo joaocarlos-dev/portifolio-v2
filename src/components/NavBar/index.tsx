@@ -1,15 +1,10 @@
 "use client";
 
 import {
-  BriefcaseIcon,
-  CodeIcon,
-  FileTextIcon,
   LanguagesIcon,
-  MailIcon,
   MenuIcon,
   MoonStarIcon,
   SunIcon,
-  UserCircleIcon,
   XIcon,
 } from "lucide-react";
 import { NavButton } from "./NavButton";
@@ -32,7 +27,7 @@ export function NavLinks({ t }: NavLinksProps) {
     "px-3",
     "flex items-center justify-start gap-2 cursor-pointer",
     "text-violet-100 font-semibold text-xl",
-    "md:text-[1.1rem]",
+    "md:text-[0.6rem]",
     "transition ease-in-out duration-400",
     "hover:bg-violet-400 md:rounded-2xl rounded-xl py-1",
     "md:dark:text-dark-text",
@@ -43,27 +38,22 @@ export function NavLinks({ t }: NavLinksProps) {
     <div
       className={clsx(
         "flex flex-col gap-4 mt-15 ",
-        "md:flex md:flex-row md:mt-0 md:gap-1 md:flex-wrap"
+        "md:flex md:flex-row md:mt-0 md:gap-1 md:flex-wrap md:pl-8"
       )}
     >
       <Link className={linkClasses} href={"about"}>
-        <UserCircleIcon />
         {t("about")}
       </Link>
       <Link className={linkClasses} href={"experiences"}>
-        <BriefcaseIcon />
         {t("experiences")}
       </Link>
       <Link className={linkClasses} href={"projects"}>
-        <CodeIcon />
         {t("projects")}
       </Link>
       <Link className={linkClasses} href={"contact"}>
-        <MailIcon />
         {t("contact")}
       </Link>
       <Link className={linkClasses} href={"curriculum"}>
-        <FileTextIcon />
         {t("curriculum")}
       </Link>
     </div>
@@ -127,7 +117,7 @@ export function NavBar() {
         <div
           className={clsx(
             "bg-nav-background",
-            "w-[90%] h-16 rounded-3xl",
+            "w-[80%] h-12 rounded-3xl",
             "flex flex-row items-center justify-between",
             "dark:bg-dark-nav-background"
           )}

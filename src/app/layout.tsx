@@ -3,9 +3,9 @@ import "./globals.css";
 import { Container } from "@/components/Container";
 import { NavBar } from "@/components/NavBar";
 import { ThemeProvider } from "./providers/ThemeProvider";
-import { Roboto_Condensed } from "next/font/google";
+import { Press_Start_2P } from "next/font/google";
 
-const roboto = Roboto_Condensed({
+const press_start = Press_Start_2P({
   weight: "400",
   subsets: ["latin"],
 });
@@ -24,7 +24,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={press_start.className}>
       <body>
         <ThemeProvider>
           <Container>
