@@ -26,12 +26,12 @@ export function NavLinks({ t }: NavLinksProps) {
   const linkClasses = clsx(
     "px-3",
     "flex items-center justify-start gap-2 cursor-pointer",
-    "text-violet-100 font-semibold text-xl",
-    "md:text-[0.6rem]",
+    "text-violet-100 font-semibold text-[0.7rem]",
+    "md:text-[0.7rem]",
     "transition ease-in-out duration-400",
     "hover:bg-violet-400 md:rounded-2xl rounded-xl py-1",
     "md:dark:text-dark-text",
-    "dark:hover:bg-slate-700 md:dark:hover:bg-slate-400"
+    "dark:hover:bg-violet-800 md:dark:hover:bg-violet-200"
   );
 
   return (
