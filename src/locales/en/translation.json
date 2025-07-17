@@ -4,6 +4,6 @@
   "projects": "Projects",
   "contact": "Contact",
   "curriculum": "Curriculum",
-  "about_hello": "Hi, i'm João!",
+  "greetings_hello": "Hi, i'm João!",
   "about_text": "I'm a fullstack developer passionate about solving complex problems and building smart solutions. I currently work with modern technologies such as React, Next.js, Nest.Js and Node.Js, along with other tools from the web and backend ecosystems. Graduated in Systems Analysis and Development from FATEC in Ribeirão Preto, I'm always seeking to grow professionally by writing clean, testable, and well-documented code. Besides my routine of studying and building projects, I enjoy facing technical challenges, especially through programming competitions and initiatives where I can expand my knowledge. Outside of tech, I like solving Rubik’s cubes and playing the violin."
 }

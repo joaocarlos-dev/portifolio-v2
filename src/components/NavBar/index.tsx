@@ -117,7 +117,7 @@ export function NavBar() {
         <div
           className={clsx(
             "bg-nav-background",
-            "w-[80%] h-12 rounded-3xl",
+            "w-full h-12 rounded-3xl",
             "flex flex-row items-center justify-between",
             "dark:bg-dark-nav-background"
           )}
