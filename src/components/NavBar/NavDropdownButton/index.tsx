@@ -31,11 +31,9 @@ export function NavDropdownButton({ label, options }: NavDropdownButton) {
         onClick={() => setIsOpen((prev) => !prev)}
         className={clsx(
           "flex justify-center items-center mx-3",
-          "bg-violet-100 w-10 h-10 rounded-xl",
-          "text-violet-800",
-          "hover:bg-violet-300 transition",
-          "dark:hover:bg-dark-background",
-          "dark:bg-dark-btn-background dark:[&_svg]:text-dark-svg",
+          "w-10 h-10 rounded-xl",
+          "transition",
+          "dark:[&_svg]:text-white",
           "hover:cursor-pointer"
         )}
       >

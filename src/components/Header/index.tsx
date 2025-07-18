@@ -13,8 +13,8 @@ export function Header() {
         <Image
           src={"/images/header_photo.jpeg"}
           alt={"header_photo"}
-          width={200}
-          height={200}
+          width={230}
+          height={230}
           className="rounded-full ring-3 ring-pink-300 drop-shadow-[0_0_40px_#ec4899]"
         />
       </div>
