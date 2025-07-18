@@ -29,9 +29,9 @@ export function NavLinks({ t }: NavLinksProps) {
     "text-violet-100 font-semibold text-[0.7rem]",
     "md:text-[0.7rem]",
     "transition ease-in-out duration-400",
-    "hover:bg-violet-400 md:rounded-2xl rounded-xl py-1",
+    "md:rounded-2xl rounded-xl py-1",
     "md:dark:text-dark-text",
-    "dark:hover:bg-violet-800 md:dark:hover:bg-violet-200"
+    "md:dark:hover:bg-violet-800 md:dark:hover:bg-violet-200"
   );
 
   return (
