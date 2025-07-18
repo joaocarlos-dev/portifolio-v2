@@ -10,9 +10,8 @@ export function NavButton({ children, ...props }: NavButtonProps) {
         "w-10 h-10 mx-3 rounded-xl",
         "hover:cursor-pointer",
         "transition ease-in-out duration-400",
-        "hover:bg-violet-300",
-        "dark:hover:bg-dark-background",
-        "dark:[&_svg]:text-white"
+        "dark:[&_svg]:text-white [&_svg]:text-dark-background",
+        "md:bg-white dark:bg-dark-background"
       )}
       {...props}
     >

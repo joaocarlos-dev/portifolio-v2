@@ -30,8 +30,9 @@ export function NavLinks({ t }: NavLinksProps) {
     "md:text-[0.7rem]",
     "transition ease-in-out duration-400",
     "md:rounded-2xl rounded-xl py-1",
-    "md:dark:text-dark-text",
-    "md:dark:hover:bg-violet-800 md:dark:hover:bg-violet-200"
+    "md:dark:text-dark-text text-dark-background",
+    "md:dark:hover:bg-violet-200 md:dark:hover:bg-violet-200",
+    ""
   );
 
   return (
@@ -74,11 +75,12 @@ export function NavBar() {
       <div className="flex justify-center pt-5">
         <div
           className={clsx(
-            "h-screen w-1/2 bg-nav-background absolute top-0 left-0",
+            "h-screen w-1/2 bg-background absolute top-0 left-0",
             "transition-transform duration-500 transform",
             "z-50 flex flex-col items-center p-4",
-            "dark:bg-dark-background dark:shadow-2xl",
-            isOpen ? "translate-y-0" : "-translate-y-full"
+            "bg-dark-background shadow-2xl ",
+            isOpen ? "translate-y-0" : "-translate-y-full",
+            isOpen ? "shadow-black" : "shadow-none"
           )}
         >
           <div className="h-full flex flex-col justify-between items-center">
@@ -87,6 +89,7 @@ export function NavBar() {
                 onClick={() => {
                   setIsOpen(false);
                 }}
+                className="text-white hover:cursor-pointer"
               >
                 <XIcon />
               </NavButton>
@@ -94,7 +97,7 @@ export function NavBar() {
 
             <NavLinks t={t} />
 
-            <div className="flex mb-4">
+            <div className="flex mb-4 [&_svg]:text-white">
               <NavButton>
                 <a target="_blank" href={"https://github.com/joaocarlos-dev"}>
                   <GrGithub size={30} />

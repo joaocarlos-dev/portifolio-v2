@@ -32,8 +32,9 @@ export function NavDropdownButton({ label, options }: NavDropdownButton) {
         className={clsx(
           "flex justify-center items-center mx-3",
           "w-10 h-10 rounded-xl",
-          "transition",
-          "dark:[&_svg]:text-white",
+          "transition duration-300",
+          "[&_svg]:text-dark-background dark:[&_svg]:text-white",
+          "bg-white dark:bg-dark-background",
           "hover:cursor-pointer"
         )}
       >
@@ -57,7 +58,7 @@ export function NavDropdownButton({ label, options }: NavDropdownButton) {
               option.onClick();
               setIsOpen(false);
             }}
-            className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-violet-100 hover:cursor-pointer"
+            className="w-full text-left px-4 py-2 text-sm text-dark-background hover:bg-violet-100 hover:cursor-pointer"
           >
             {option.label}
             {option.icon}

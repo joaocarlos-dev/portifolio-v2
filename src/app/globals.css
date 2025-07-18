@@ -2,7 +2,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-background: #33126e;
+  --color-background: slate-100;
   --color-nav-background: oklch(60.6% 0.25 292.717);
   --color-dark-background: #33126e;
   --color-dark-nav-background: #ffffff;
