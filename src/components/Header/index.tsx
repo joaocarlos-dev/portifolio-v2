@@ -10,19 +10,18 @@ export function Header() {
           <TranslatedText tKey={"greetings_hello"} />
         </h1>
       </div>
-      <div
-        className={clsx(
-          "rounded-full ring-4",
-          "ring-purple-400 shadow-[0_0_100px_#975eff]",
-          "dark:ring-pink-300  dark:shadow-[0_0_50px_#ec4899]"
-        )}
-      >
+      <div className={clsx("flex items-center justify-center")}>
         <Image
           src="/images/header_photo.png"
           alt="header_photo"
-          width={700}
-          height={700}
-          className="rounded-full mix-blend-multiply"
+          width={280}
+          height={280}
+          className={clsx(
+            "rounded-full ring-4",
+            "ring-purple-400 shadow-[0_0_100px_#975eff]",
+            "dark:ring-pink-300 dark:shadow-[0_0_50px_#ec4899]",
+            "md:w-[700px] md:-[700px]"
+          )}
         />
       </div>
     </div>
