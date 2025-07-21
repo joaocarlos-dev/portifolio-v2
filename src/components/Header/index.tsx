@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { TranslatedText } from "../TranslatedText";
+import clsx from "clsx";
 
 export function Header() {
   return (
@@ -9,13 +10,19 @@ export function Header() {
           <TranslatedText tKey={"greetings_hello"} />
         </h1>
       </div>
-      <div className="flex items-center justify-center">
+      <div
+        className={clsx(
+          "rounded-full ring-4",
+          "ring-purple-400 shadow-[0_0_100px_#975eff]",
+          "dark:ring-pink-300  dark:shadow-[0_0_50px_#ec4899]"
+        )}
+      >
         <Image
-          src={"/images/header_photo.png"}
-          alt={"header_photo"}
-          width={750}
-          height={750}
-          className="rounded-full inset-shadow-pink-300 inset-shadow"
+          src="/images/header_photo.png"
+          alt="header_photo"
+          width={700}
+          height={700}
+          className="rounded-full mix-blend-multiply"
         />
       </div>
     </div>
