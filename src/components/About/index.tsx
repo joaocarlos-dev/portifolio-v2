@@ -10,12 +10,12 @@ export function About() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full px-8 md:px-16 py-10 gap-10 text-white z-10">
-        <div className="md:row-start-1 md:col-start-1">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full px-8 md:px-16 py-10 gap-10 text-white z-10 ">
+        <div className="md:row-start-1 md:col-start-1 pr-5">
           <h2 className="text-2xl font-bold mb-4 md:pt-15">
             <TranslatedText tKey={"about_me"} />
           </h2>
-          <p className="text-[0.7rem] text-justify">
+          <p className="text-[1.1rem] text-justify font-sans">
             <TranslatedText tKey={"about_me_text"} />
           </p>
         </div>
@@ -40,20 +40,20 @@ export function About() {
           />
         </div>
 
-        <div className="md:row-start-2 md:col-start-2">
+        <div className="md:row-start-2 md:col-start-2 pl-5">
           <h2 className="text-2xl font-bold mb-4 md:pt-15">
             <TranslatedText tKey={"about_me_education"} />
           </h2>
-          <p className="text-[0.7rem] text-justify">
+          <p className="text-[1.1rem] font-mono text-justify">
             <TranslatedText tKey={"about_me_education_text"} />
           </p>
         </div>
 
-        <div className="md:row-start-3 md:col-start-1">
+        <div className="md:row-start-3 md:col-start-1 pr-5">
           <h2 className="text-2xl font-bold mb-4 md:pt-8">
             <TranslatedText tKey={"about_me_hobby"} />
           </h2>
-          <p className="text-[0.7rem] text-justify">
+          <p className="text-[1.1rem] font-mono text-justify">
             <TranslatedText tKey={"about_me_hobby_text"} />
           </p>
         </div>
