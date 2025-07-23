@@ -20,7 +20,7 @@ export function Header() {
             "rounded-full ring-4",
             "ring-purple-400 shadow-[0_0_100px_#975eff]",
             "dark:ring-pink-300 dark:shadow-[0_0_50px_#ec4899]",
-            "md:w-[700px] md:-[700px]"
+            "md:w-[700px] "
           )}
         />
       </div>

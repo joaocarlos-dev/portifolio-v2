@@ -1,9 +1,14 @@
+import { About } from "@/components/About";
 import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
-    <div className="flex justify-center">
+    <main className="flex flex-col">
       <Header />
-    </div>
+
+      <section className="relative min-h-screen">
+        <About />
+      </section>
+    </main>
   );
 }
