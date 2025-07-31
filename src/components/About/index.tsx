@@ -28,7 +28,7 @@ export function About() {
           "text-dark-background dark:text-white"
         )}
       >
-        <div className="md:row-start-1 md:col-start-1 pr-5">
+        <div className="md:row-start-1 md:col-start-1 pr-5 lg:pr-20">
           <h2 className="text-2xl font-bold mb-4 md:pt-15">
             <TranslatedText tKey={"about_me"} />
           </h2>
@@ -46,6 +46,14 @@ export function About() {
           />
         </div>
 
+        <div className="md:row-start-2 md:col-start-2 pl-5 lg:pl-20">
+          <h2 className="text-2xl font-bold mb-4 md:pt-15">
+            <TranslatedText tKey={"about_me_education"} />
+          </h2>
+          <p className="text-[1.1rem] font-mono text-justify">
+            <TranslatedText tKey={"about_me_education_text"} />
+          </p>
+        </div>
         <div className="md:row-start-2 md:col-start-1">
           <FloatingImage
             src={"/images/education.png"}
@@ -55,16 +63,7 @@ export function About() {
           />
         </div>
 
-        <div className="md:row-start-2 md:col-start-2 pl-5">
-          <h2 className="text-2xl font-bold mb-4 md:pt-15">
-            <TranslatedText tKey={"about_me_education"} />
-          </h2>
-          <p className="text-[1.1rem] font-mono text-justify">
-            <TranslatedText tKey={"about_me_education_text"} />
-          </p>
-        </div>
-
-        <div className="md:row-start-3 md:col-start-1 pr-5">
+        <div className="md:row-start-3 md:col-start-1 pr-5 lg:pr-20">
           <h2 className="text-2xl font-bold mb-4 md:pt-8">
             <TranslatedText tKey={"about_me_hobby"} />
           </h2>
