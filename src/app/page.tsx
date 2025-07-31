@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex flex-col">
       <Header />
 
-      <section className="relative min-h-screen">
+      <section id="about" className="relative">
         <About />
       </section>
     </main>

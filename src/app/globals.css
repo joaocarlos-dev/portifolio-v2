@@ -10,3 +10,9 @@
   --color-dark-btn-background: #6c4aa7;
   --color-dark-svg: #e5d6ff;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

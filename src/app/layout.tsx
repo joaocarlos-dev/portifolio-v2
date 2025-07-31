@@ -25,7 +25,7 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en" className={press_start.className}>
-      <body>
+      <body className="overflow-x-hidden">
         <ThemeProvider>
           <Container>
             <NavBar />

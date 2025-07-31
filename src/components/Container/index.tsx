@@ -6,7 +6,7 @@ type ContainerProps = {
 
 export function Container({ children }: ContainerProps) {
   return (
-    <div className="bg-background min-h-screen dark:bg-dark-background overflow-hidden">
+    <div className="bg-background min-h-screen dark:bg-dark-background">
       <div className="max-w-screen-lg mx-auto ">
         <Image
           src={"/images/background.png"}

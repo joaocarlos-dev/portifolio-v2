@@ -4,10 +4,10 @@ import { FloatingImage } from "./FloatingImage";
 
 export function About() {
   return (
-    <div className="relative min-h-screen flex justify-center pt-20">
+    <div className="relative flex justify-center pt-20 overflow-hidden">
       <div
         className={clsx(
-          "hidden md:flex absolute bottom-24 left-1/2 transform -translate-x-1/2",
+          "hidden md:flex absolute bottom-25 left-1/2 transform -translate-x-1/2",
           "items-center justify-center z-0"
         )}
       >

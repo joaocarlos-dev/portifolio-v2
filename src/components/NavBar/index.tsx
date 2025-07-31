@@ -10,7 +10,6 @@ import {
 import { NavButton } from "./NavButton";
 import clsx from "clsx";
 import { useState } from "react";
-import Link from "next/link";
 import { GrGithub } from "react-icons/gr";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { NavDropdownButton } from "./NavDropdownButton";
@@ -42,21 +41,21 @@ export function NavLinks({ t }: NavLinksProps) {
         "md:flex md:flex-row md:mt-0 md:gap-1 md:flex-wrap md:pl-8"
       )}
     >
-      <Link className={linkClasses} href={"about"}>
+      <a className={linkClasses} href="#about">
         {t("about")}
-      </Link>
-      <Link className={linkClasses} href={"experiences"}>
+      </a>
+      <a className={linkClasses} href="#experiences">
         {t("experiences")}
-      </Link>
-      <Link className={linkClasses} href={"projects"}>
+      </a>
+      <a className={linkClasses} href="#projects">
         {t("projects")}
-      </Link>
-      <Link className={linkClasses} href={"contact"}>
+      </a>
+      <a className={linkClasses} href="#contact">
         {t("contact")}
-      </Link>
-      <Link className={linkClasses} href={"curriculum"}>
+      </a>
+      <a className={linkClasses} href="#curriculum">
         {t("curriculum")}
-      </Link>
+      </a>
     </div>
   );
 }
@@ -71,7 +70,7 @@ export function NavBar() {
   };
 
   return (
-    <nav>
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md">
       <div className="flex justify-center pt-5">
         <div
           className={clsx(
@@ -119,7 +118,7 @@ export function NavBar() {
 
         <div
           className={clsx(
-            "w-full h-12 rounded-3xl",
+            "w-[90vw] mx-auto h-12 rounded-3xl",
             "flex flex-row items-center justify-between",
             "md:dark:bg-dark-nav-background",
             "sm:bg-dark-background"
