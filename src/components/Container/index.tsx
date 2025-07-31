@@ -12,7 +12,7 @@ export function Container({ children }: ContainerProps) {
           src={"/images/background.png"}
           alt={"binary_background"}
           fill={true}
-          className="opacity-10 dark:opacity-50 object-cover z-0 mix-blend-multiply"
+          className="opacity-20 dark:opacity-50 object-cover z-0 mix-blend-multiply"
         />
         <div className="relative z-10 max-w-screen-lg mx-auto">{children}</div>
       </div>
