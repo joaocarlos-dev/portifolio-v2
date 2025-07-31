@@ -13,13 +13,13 @@ type FloatingImageProps = {
 export function FloatingImage({ src, alt, width, height }: FloatingImageProps) {
   return (
     <motion.div
-      animate={{ y: [0, -7, 0] }}
+      animate={{ y: [0, -10, 0] }}
       transition={{
         duration: 3,
         repeat: Infinity,
         ease: "easeInOut",
       }}
-      className="pt-4 mx-auto w-fit"
+      className="pt-4 mx-auto w-fit hover:scale-105"
     >
       <Image src={src} alt={alt} width={width} height={height} />
     </motion.div>
