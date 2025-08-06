@@ -1,9 +1,12 @@
+// app/layout.tsx (ou app/layout.jsx dependendo do seu projeto)
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { Container } from "@/components/Container";
 import { NavBar } from "@/components/NavBar";
 import { ThemeProvider } from "./providers/ThemeProvider";
 import { Mona_Sans } from "next/font/google";
+import MatrixRainingCode from "@/components/matrixRainingEffect";
 
 const press_start = Mona_Sans({
   weight: "400",
@@ -12,8 +15,8 @@ const press_start = Mona_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "João | Portifolio",
-    template: "%s | Portifolio",
+    default: "João | Portifólio",
+    template: "%s | Portifólio",
   },
   description: "Meu portifólio pessoal",
 };
@@ -25,8 +28,14 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en" className={press_start.className}>
-      <body className="overflow-x-hidden">
+      <body className="overflow-x-hidden relative">
         <ThemeProvider>
+          {/* BACKGROUND GLOBAL */}
+          <div className="fixed inset-0 z-0 pointer-events-none">
+            <MatrixRainingCode />
+          </div>
+
+          {/* CONTEÚDO PRINCIPAL */}
           <Container>
             <NavBar />
             {children}
