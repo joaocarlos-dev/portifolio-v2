@@ -1,18 +1,32 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import en from "./en/translation.json";
-import pt from "./pt/translation.json";
+import enAbout from "./en/about.json";
+import enExperiences from "./en/experiences.json";
+import ptAbout from "./pt/about.json";
+import ptExperiences from "./pt/experiences.json";
+import enCommon from "./en/common.json";
+import ptCommon from "./pt/common.json";
+import enNavbar from "./en/navbar.json";
+import ptNavbar from "./pt/navbar.json";
 
 i18n.use(initReactI18next).init({
   resources: {
-    en: { translation: en },
-    pt: { translation: pt },
+    en: {
+      about: enAbout,
+      experiences: enExperiences,
+      common: enCommon,
+      navbar: enNavbar,
+    },
+    pt: {
+      about: ptAbout,
+      experiences: ptExperiences,
+      common: ptCommon,
+      navbar: ptNavbar,
+    },
   },
   fallbackLng: "en",
   interpolation: {
     escapeValue: false,
   },
 });
-
-export default i18n;

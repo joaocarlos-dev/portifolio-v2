@@ -1,0 +1,15 @@
+{
+  "title": "Experiences",
+  "items": {
+    "empresa_x": {
+      "title": "Company X",
+      "start_date": "05/21/2021",
+      "description": "Worked as a fullstack developer on both internal and external projects, using React, Node.js, and PostgreSQL. Developed scalable systems with a focus on performance and automated testing."
+    },
+    "empresa_y": {
+      "title": "Company Y",
+      "start_date": "02/10/2023",
+      "description": "Responsible for the architecture of microservices using Nest.js and messaging with RabbitMQ. Also led refactoring and performance improvement initiatives."
+    }
+  }
+}

@@ -30,10 +30,10 @@ export function About() {
       >
         <div className="md:row-start-1 md:col-start-1 pr-5 lg:pr-20">
           <h2 className="text-2xl font-bold mb-4 md:pt-15">
-            <TranslatedText tKey={"about_me"} />
+            <TranslatedText ns="about" tKey={"title"} />
           </h2>
           <p className="text-[1.1rem] text-justify">
-            <TranslatedText tKey={"about_me_text"} />
+            <TranslatedText ns="about" tKey={"education_text"} />
           </p>
         </div>
 
@@ -48,10 +48,10 @@ export function About() {
 
         <div className="md:row-start-2 md:col-start-2 pl-5 lg:pl-20">
           <h2 className="text-2xl font-bold mb-4 md:pt-15">
-            <TranslatedText tKey={"about_me_education"} />
+            <TranslatedText ns="about" tKey={"education_title"} />
           </h2>
           <p className="text-[1.1rem] text-justify">
-            <TranslatedText tKey={"about_me_education_text"} />
+            <TranslatedText ns="about" tKey={"education_text"} />
           </p>
         </div>
         <div className="md:row-start-2 md:col-start-1">
@@ -65,10 +65,10 @@ export function About() {
 
         <div className="md:row-start-3 md:col-start-1 pr-5 lg:pr-20">
           <h2 className="text-2xl font-bold mb-4 md:pt-8">
-            <TranslatedText tKey={"about_me_hobby"} />
+            <TranslatedText ns="about" tKey={"hobby_title"} />
           </h2>
           <p className="text-[1.1rem] text-justify">
-            <TranslatedText tKey={"about_me_hobby_text"} />
+            <TranslatedText ns="about" tKey={"hobby_text"} />
           </p>
         </div>
 

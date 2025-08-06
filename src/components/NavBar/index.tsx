@@ -16,12 +16,9 @@ import { NavDropdownButton } from "./NavDropdownButton";
 import { useTranslation } from "react-i18next";
 import "../../locales/i18n";
 import { useTheme } from "@/app/providers/ThemeProvider";
+import { TranslatedText } from "../TranslatedText";
 
-interface NavLinksProps {
-  t: (key: string) => string;
-}
-
-export function NavLinks({ t }: NavLinksProps) {
+export function NavLinks() {
   const linkClasses = clsx(
     "px-3",
     "flex items-center justify-start gap-2 cursor-pointer",
@@ -42,19 +39,19 @@ export function NavLinks({ t }: NavLinksProps) {
       )}
     >
       <a className={linkClasses} href="#about">
-        {t("about")}
+        <TranslatedText ns="navbar" tKey={"about"} />
       </a>
       <a className={linkClasses} href="#experiences">
-        {t("experiences")}
+        <TranslatedText ns="navbar" tKey={"experiences"} />
       </a>
       <a className={linkClasses} href="#projects">
-        {t("projects")}
+        <TranslatedText ns="navbar" tKey={"projects"} />
       </a>
       <a className={linkClasses} href="#contact">
-        {t("contact")}
+        <TranslatedText ns="navbar" tKey={"contact"} />
       </a>
       <a className={linkClasses} href="#curriculum">
-        {t("curriculum")}
+        <TranslatedText ns="navbar" tKey={"curriculum"} />
       </a>
     </div>
   );
@@ -62,7 +59,7 @@ export function NavLinks({ t }: NavLinksProps) {
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const { theme, toggleTheme } = useTheme();
 
   const changeLanguage = (lng: string | undefined) => {
@@ -94,7 +91,7 @@ export function NavBar() {
               </NavButton>
             </div>
 
-            <NavLinks t={t} />
+            <NavLinks />
 
             <div className="flex mb-4 [&_svg]:text-white">
               <NavButton>
@@ -135,7 +132,7 @@ export function NavBar() {
           </div>
 
           <div className="hidden md:flex md:flex-1 h-full">
-            <NavLinks t={t} />
+            <NavLinks />
           </div>
 
           <div className="flex z-10 ">

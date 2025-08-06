@@ -13,7 +13,7 @@ export function Experience() {
             "text-4xl md:text-7xl pl-4 md:pl-0"
           )}
         >
-          <TranslatedText tKey={"experiences_title"} />
+          <TranslatedText ns="experiences" tKey={"title"} />
         </h1>
         <div className="pl-40 hidden md:flex">
           <FloatingImage
@@ -26,7 +26,11 @@ export function Experience() {
       </div>
       <div className="mt-4 h-[2px] w-[90%] mx-4 bg-pink-400 md:w-[100%] md:mx-0 rounded-full" />
       <div className="pt-15 pb-15">
-        <ExperienceCard />
+        <ExperienceCard
+          companyTitle={"items.empresa_x.title"}
+          companyDate={"items.empresa_x.start_date"}
+          companyDescription={"items.empresa_x.description"}
+        />
       </div>
     </div>
   );

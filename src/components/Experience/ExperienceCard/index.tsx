@@ -1,10 +1,21 @@
 "use client";
 
+import { TranslatedText } from "@/components/TranslatedText";
 import clsx from "clsx";
 import { ChevronDownIcon } from "lucide-react";
 import { useState } from "react";
 
-export function ExperienceCard() {
+type ExperienceCardType = {
+  companyTitle: string;
+  companyDate: string;
+  companyDescription: string;
+};
+
+export function ExperienceCard({
+  companyTitle,
+  companyDescription,
+  companyDate,
+}: ExperienceCardType) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -18,9 +29,13 @@ export function ExperienceCard() {
       onClick={() => setIsOpen((prev) => !prev)}
     >
       <div className="h-[90px] flex px-6 items-center justify-between">
-        <h3 className="text-white font-semibold text-xl">Empresa X</h3>
+        <h3 className="text-white font-semibold text-xl">
+          <TranslatedText ns="experiences" tKey={companyTitle} />
+        </h3>
         <div className="flex gap-4">
-          <p className="text-slate-800">21/05/2021</p>
+          <p className="text-slate-800">
+            <TranslatedText ns="experiences" tKey={companyDate} />
+          </p>
           <ChevronDownIcon
             className={clsx(
               "ml-auto transition-transform duration-500",
@@ -34,8 +49,7 @@ export function ExperienceCard() {
       {isOpen && (
         <div className="bg-white px-6 py-4 text-dark-background">
           <p className="text-sm md:text-base">
-            Aqui vai a descrição da experiência, projetos desenvolvidos,
-            tecnologias utilizadas etc.
+            <TranslatedText ns="experiences" tKey={companyDescription} />
           </p>
         </div>
       )}

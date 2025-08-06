@@ -7,10 +7,10 @@ export function Header() {
     <div className="flex flex-col md:flex-row pt-50 md:items-center md:justify-center gap-25">
       <div className=" md:w-[70%] items-start justify-start pl-6">
         <h1 className="text-dark-background dark:text-white text-5xl md:text-8xl/relaxed font-thin">
-          <TranslatedText tKey={"greetings_hello"} />
+          <TranslatedText ns="common" tKey={"greetings_hello"} />
         </h1>
         <h1 className="text-dark-background dark:text-white text-5xl md:text-8xl/relaxed font-thin">
-          <TranslatedText tKey={"greetings_hello_2"} />
+          <TranslatedText ns="common" tKey={"greetings_hello_2"} />
         </h1>
       </div>
       <div className={clsx("flex items-center justify-center")}>
