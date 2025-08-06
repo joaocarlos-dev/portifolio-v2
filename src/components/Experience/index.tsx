@@ -1,9 +1,18 @@
+"use client";
+
 import clsx from "clsx";
 import { TranslatedText } from "../TranslatedText";
 import { FloatingImage } from "../About/FloatingImage";
 import { ExperienceCard } from "./ExperienceCard";
+import { useTranslation } from "react-i18next";
 
 export function Experience() {
+  const { t } = useTranslation("experiences");
+
+  const InovaiDescription = t("items.inovai.description", {
+    returnObjects: true,
+  }) as string[];
+
   return (
     <div className="pt-50 md:pt-80 min-h-screen">
       <div className="flex items-center">
@@ -27,9 +36,10 @@ export function Experience() {
       <div className="mt-4 h-[2px] w-[90%] mx-4 bg-pink-400 md:w-[100%] md:mx-0 rounded-full" />
       <div className="pt-15 pb-15">
         <ExperienceCard
-          companyTitle={"items.empresa_x.title"}
-          companyDate={"items.empresa_x.start_date"}
-          companyDescription={"items.empresa_x.description"}
+          companyTitle={"items.inovai.title"}
+          companyStartDate={"items.inovai.start_date"}
+          companyEndDate={"items.inovai.end_date"}
+          companyDescription={InovaiDescription}
         />
       </div>
     </div>

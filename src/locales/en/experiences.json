@@ -6,10 +6,15 @@
       "start_date": "05/21/2021",
       "description": "Worked as a fullstack developer on both internal and external projects, using React, Node.js, and PostgreSQL. Developed scalable systems with a focus on performance and automated testing."
     },
-    "empresa_y": {
-      "title": "Company Y",
-      "start_date": "02/10/2023",
-      "description": "Responsible for the architecture of microservices using Nest.js and messaging with RabbitMQ. Also led refactoring and performance improvement initiatives."
+    "inovai": {
+      "title": "Inov.AI",
+      "start_date": "23/09/2024",
+      "end_date": "15/05/2025",
+      "description": [
+        "Developed solutions in Python focusing on analysis and extraction of legal documents;",
+        "Created automations using Python, PostgreSQL, MongoDB, SQL Server;",
+        "Maintained an internal application built with Angular, Typescript, and ElasticSearch."
+      ]
     }
   }
 }

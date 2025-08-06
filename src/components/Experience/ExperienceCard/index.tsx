@@ -7,14 +7,16 @@ import { useState } from "react";
 
 type ExperienceCardType = {
   companyTitle: string;
-  companyDate: string;
-  companyDescription: string;
+  companyStartDate: string;
+  companyEndDate: string;
+  companyDescription: string[];
 };
 
 export function ExperienceCard({
   companyTitle,
   companyDescription,
-  companyDate,
+  companyStartDate,
+  companyEndDate,
 }: ExperienceCardType) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -34,7 +36,10 @@ export function ExperienceCard({
         </h3>
         <div className="flex gap-4">
           <p className="text-slate-800">
-            <TranslatedText ns="experiences" tKey={companyDate} />
+            <TranslatedText ns="experiences" tKey={companyStartDate} />
+          </p>
+          <p className="text-slate-800">
+            <TranslatedText ns="experiences" tKey={companyEndDate} />
           </p>
           <ChevronDownIcon
             className={clsx(
@@ -48,9 +53,13 @@ export function ExperienceCard({
 
       {isOpen && (
         <div className="bg-white px-6 py-4 text-dark-background">
-          <p className="text-sm md:text-base">
-            <TranslatedText ns="experiences" tKey={companyDescription} />
-          </p>
+          <ul className="list-disc list-inside text-sm md:text-base space-y-1">
+            {companyDescription.map((line, index) => (
+              <li key={index}>
+                <TranslatedText ns="experiences" tKey={line} />
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </div>
