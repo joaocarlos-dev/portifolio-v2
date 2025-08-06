@@ -32,7 +32,7 @@ export function About() {
           <h2 className="text-2xl font-bold mb-4 md:pt-15">
             <TranslatedText tKey={"about_me"} />
           </h2>
-          <p className="text-[1.1rem] text-justify font-sans">
+          <p className="text-[1.1rem] text-justify">
             <TranslatedText tKey={"about_me_text"} />
           </p>
         </div>
@@ -50,7 +50,7 @@ export function About() {
           <h2 className="text-2xl font-bold mb-4 md:pt-15">
             <TranslatedText tKey={"about_me_education"} />
           </h2>
-          <p className="text-[1.1rem] font-mono text-justify">
+          <p className="text-[1.1rem] text-justify">
             <TranslatedText tKey={"about_me_education_text"} />
           </p>
         </div>
@@ -67,7 +67,7 @@ export function About() {
           <h2 className="text-2xl font-bold mb-4 md:pt-8">
             <TranslatedText tKey={"about_me_hobby"} />
           </h2>
-          <p className="text-[1.1rem] font-mono text-justify">
+          <p className="text-[1.1rem] text-justify">
             <TranslatedText tKey={"about_me_hobby_text"} />
           </p>
         </div>

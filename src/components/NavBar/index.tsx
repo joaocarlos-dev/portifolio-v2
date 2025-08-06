@@ -25,8 +25,8 @@ export function NavLinks({ t }: NavLinksProps) {
   const linkClasses = clsx(
     "px-3",
     "flex items-center justify-start gap-2 cursor-pointer",
-    "text-violet-100 font-semibold text-[0.7rem]",
-    "md:text-[0.7rem]",
+    "text-violet-100 font-semibold text-[0.9rem]",
+    "md:text-[1.1rem]",
     "transition ease-in-out duration-400",
     "md:rounded-2xl rounded-xl py-1",
     "md:dark:text-dark-text text-dark-background",
@@ -38,7 +38,7 @@ export function NavLinks({ t }: NavLinksProps) {
     <div
       className={clsx(
         "flex flex-col gap-4 mt-15 ",
-        "md:flex md:flex-row md:mt-0 md:gap-1 md:flex-wrap md:pl-8"
+        "md:flex md:flex-row md:mt-0 md:gap-20 md:flex-wrap md:pl-20 md:w-full"
       )}
     >
       <a className={linkClasses} href="#about">

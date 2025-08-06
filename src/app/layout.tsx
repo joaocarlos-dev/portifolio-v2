@@ -3,9 +3,9 @@ import "./globals.css";
 import { Container } from "@/components/Container";
 import { NavBar } from "@/components/NavBar";
 import { ThemeProvider } from "./providers/ThemeProvider";
-import { Press_Start_2P } from "next/font/google";
+import { Mona_Sans } from "next/font/google";
 
-const press_start = Press_Start_2P({
+const press_start = Mona_Sans({
   weight: "400",
   subsets: ["latin"],
 });
