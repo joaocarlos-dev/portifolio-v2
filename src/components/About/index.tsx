@@ -7,7 +7,7 @@ export function About() {
     <div className="relative flex justify-center pt-40 overflow-hidden">
       <div
         className={clsx(
-          "hidden md:flex absolute bottom-25 left-1/2 transform -translate-x-1/2",
+          "hidden md:flex absolute bottom-100 left-1/2 transform -translate-x-1/2",
           "items-center justify-center z-0"
         )}
       >
@@ -17,7 +17,7 @@ export function About() {
             "text-xl font-bold tracking-widest select-none rotate-90 whitespace-nowrap"
           )}
         >
-          {"-".repeat(80)}
+          {"-".repeat(120)}
         </div>
       </div>
 

@@ -30,12 +30,10 @@ export default async function RootLayout({
     <html lang="en" className={press_start.className}>
       <body className="overflow-x-hidden relative">
         <ThemeProvider>
-          {/* BACKGROUND GLOBAL */}
           <div className="fixed inset-0 z-0 pointer-events-none">
             <MatrixRainingCode />
           </div>
 
-          {/* CONTEÚDO PRINCIPAL */}
           <Container>
             <NavBar />
             {children}
