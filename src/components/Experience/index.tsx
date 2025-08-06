@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { TranslatedText } from "../TranslatedText";
 import { FloatingImage } from "../About/FloatingImage";
+import { ExperienceCard } from "./ExperienceCard";
 
 export function Experience() {
   return (
@@ -24,6 +25,9 @@ export function Experience() {
         </div>
       </div>
       <div className="mt-4 h-[2px] w-[90%] mx-4 bg-pink-400 md:w-[100%] md:mx-0 rounded-full" />
+      <div className="pt-15 pb-15">
+        <ExperienceCard />
+      </div>
     </div>
   );
 }
