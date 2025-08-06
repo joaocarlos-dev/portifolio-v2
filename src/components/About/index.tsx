@@ -33,7 +33,7 @@ export function About() {
             <TranslatedText ns="about" tKey={"title"} />
           </h2>
           <p className="text-[1.1rem] text-justify">
-            <TranslatedText ns="about" tKey={"education_text"} />
+            <TranslatedText ns="about" tKey={"about_me_text"} />
           </p>
         </div>
 
