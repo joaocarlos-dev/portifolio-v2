@@ -16,6 +16,10 @@
     "angular_portifolio": {
       "title": "Primeiro Portifólio",
       "description": "Meu primeiro portifólio pessoal desenvolvido para apresentar sobre mim e meus conhecimentos."
+    },
+    "portifolio": {
+      "title": "Portifólio",
+      "description": "Meu novo portifólio pessoal desenvolvido para apresentar sobre mim e meus conhecimentos como desenvolvedor fullstack."
     }
   }
 }

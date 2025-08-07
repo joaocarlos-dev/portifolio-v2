@@ -63,6 +63,19 @@ export function Projects() {
           ]}
         />
         <ProjectCard
+          imgUrl={"/images/projects/portifolio.png"}
+          alt={"portifolio_project_image"}
+          projectTitle={"items.portifolio.title"}
+          projectDescription={"items.portifolio.description"}
+          icons={[
+            <RiNextjsFill key="next" />,
+            <RiReactjsFill key="react" />,
+            <RiHtml5Fill key="html5" />,
+            <SiTypescript key="typescript" />,
+            <RiTailwindCssFill key="tailwind" />,
+          ]}
+        />
+        <ProjectCard
           imgUrl={"/images/projects/maismix.png"}
           alt={"maismix_project_image"}
           projectTitle={"items.maismix.title"}

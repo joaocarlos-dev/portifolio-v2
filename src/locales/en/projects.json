@@ -16,6 +16,10 @@
     "angular_portifolio": {
       "title": "First Portifolio",
       "description": "My first personal portifolio to talk more about me and show my skills."
+    },
+    "portifolio": {
+      "title": "Portifolio",
+      "description": "My newest portifolio to talk more about me and show my skills as a fullstack developer."
     }
   }
 }
