@@ -13,7 +13,7 @@ export function Header() {
           <TranslatedText ns="common" tKey={"greetings_hello_2"} />
         </h1>
       </div>
-      <div className={clsx("flex items-center justify-center")}>
+      <div className={clsx("flex items-center justify-center relative z-10")}>
         <Image
           src="/images/header_photo.png"
           alt="header_photo"
