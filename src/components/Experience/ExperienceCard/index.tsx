@@ -3,7 +3,7 @@
 import { TranslatedText } from "@/components/TranslatedText";
 import clsx from "clsx";
 import { ChevronDownIcon } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type ExperienceCardType = {
   companyTitle: string;
@@ -19,6 +19,19 @@ export function ExperienceCard({
   companyEndDate,
 }: ExperienceCardType) {
   const [isOpen, setIsOpen] = useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      setShouldRender(true);
+    } else {
+      const timeout = setTimeout(() => {
+        setShouldRender(false);
+      }, 500);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [isOpen]);
 
   return (
     <div
@@ -51,8 +64,13 @@ export function ExperienceCard({
         </div>
       </div>
 
-      {isOpen && (
-        <div className="bg-white px-6 py-4 text-dark-background">
+      {shouldRender && (
+        <div
+          className={clsx(
+            "px-6 py-4 text-dark-background bg-white transition-opacity duration-500",
+            isOpen ? "opacity-100" : "opacity-0"
+          )}
+        >
           <ul className="list-disc list-inside text-sm md:text-base space-y-1">
             {companyDescription.map((line, index) => (
               <li key={index}>
