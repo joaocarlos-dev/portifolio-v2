@@ -3,12 +3,14 @@ import { TranslatedText } from "../TranslatedText";
 import { FloatingImage } from "../About/FloatingImage";
 import { ProjectCard } from "./ProjectCard";
 import {
+  RiFirebaseFill,
+  RiFlutterFill,
   RiNextjsFill,
   RiNodejsFill,
   RiReactjsFill,
   RiTailwindCssFill,
 } from "react-icons/ri";
-import { SiSqlite, SiTypescript } from "react-icons/si";
+import { SiDart, SiSqlite, SiTypescript } from "react-icons/si";
 
 export function Projects() {
   return (
@@ -52,11 +54,15 @@ export function Projects() {
           ]}
         />
         <ProjectCard
-          imgUrl={"/images/img_teste.jpg"}
-          alt={"teste"}
-          projectTitle={""}
-          projectDescription={""}
-          icons={[]}
+          imgUrl={"/images/projects/maismix.png"}
+          alt={"maismix_project_image"}
+          projectTitle={"items.maismix.title"}
+          projectDescription={"items.maismix.description"}
+          icons={[
+            <RiFlutterFill key="flutter" />,
+            <SiDart key="dart" />,
+            <RiFirebaseFill key="firebase" />,
+          ]}
         />
         <ProjectCard
           imgUrl={"/images/img_teste.jpg"}

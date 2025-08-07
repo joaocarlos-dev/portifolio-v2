@@ -4,6 +4,10 @@
     "the_blog": {
       "title": "The Blog",
       "description": "A personal blog built from scratch to study and apply modern technologies in frontend, backend, and database."
+    },
+    "maismix": {
+      "title": "MaisMix",
+      "description": "A delivery scheduling and client management app."
     }
   }
 }

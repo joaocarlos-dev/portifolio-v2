@@ -4,6 +4,10 @@
     "the_blog": {
       "title": "The Blog",
       "description": "Um blog pessoal feito do zero pra estudar e aplicar frontend, backend e banco de dados com tecnologias modernas."
+    },
+    "maismix": {
+      "title": "MaisMix",
+      "description": "Aplicativo para agendamento de entregas e gestão de clientes"
     }
   }
 }
