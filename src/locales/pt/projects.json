@@ -12,6 +12,10 @@
     "algvis": {
       "title": "AlgVis",
       "description": "Plataforma interativa para visualizar algoritmos e estruturas de dados de forma animada e intuitiva."
+    },
+    "angular_portifolio": {
+      "title": "Primeiro Portifólio",
+      "description": "Meu primeiro portifólio pessoal desenvolvido para apresentar sobre mim e meus conhecimentos."
     }
   }
 }

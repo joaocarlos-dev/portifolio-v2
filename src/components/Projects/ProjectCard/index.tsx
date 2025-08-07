@@ -46,7 +46,7 @@ export function ProjectCard({
           </p>
         </div>
 
-        <div className="flex justify-center gap-2 pt-4 [&_svg]:text-white text-4xl">
+        <div className="flex justify-center gap-2 pt-4 [&_svg]:text-white text-3xl">
           {icons.map((Icon, index) => (
             <span key={index}>{Icon}</span>
           ))}

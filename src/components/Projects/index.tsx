@@ -3,8 +3,10 @@ import { TranslatedText } from "../TranslatedText";
 import { FloatingImage } from "../About/FloatingImage";
 import { ProjectCard } from "./ProjectCard";
 import {
+  RiAngularjsFill,
   RiFirebaseFill,
   RiFlutterFill,
+  RiHtml5Fill,
   RiNextjsFill,
   RiNodejsFill,
   RiReactjsFill,
@@ -53,6 +55,7 @@ export function Projects() {
           icons={[
             <RiNextjsFill key="next" />,
             <RiReactjsFill key="react" />,
+            <RiHtml5Fill key="html5" />,
             <RiNodejsFill key="node" />,
             <SiTypescript key="typescript" />,
             <RiTailwindCssFill key="tailwind" />,
@@ -78,10 +81,23 @@ export function Projects() {
           icons={[
             <RiNextjsFill key="next" />,
             <RiReactjsFill key="react" />,
+            <RiHtml5Fill key="html5" />,
             <SiTypescript key="typescript" />,
             <RiTailwindCssFill key="tailwind" />,
             <SiPython key="python" />,
             <SiFastapi key="fastapi" />,
+          ]}
+        />
+        <ProjectCard
+          imgUrl={"/images/projects/first_portifolio.png"}
+          alt={"first_portifolio_project_image"}
+          projectTitle={"items.angular_portifolio.title"}
+          projectDescription={"items.angular_portifolio.description"}
+          icons={[
+            <RiAngularjsFill key="angular" />,
+            <SiTypescript key="typescript" />,
+            <RiTailwindCssFill key="tailwind" />,
+            <RiHtml5Fill key="html5" />,
           ]}
         />
       </div>
