@@ -1,19 +1,29 @@
 {
   "title": "Experiences",
   "items": {
-    "empresa_x": {
-      "title": "Company X",
-      "start_date": "05/21/2021",
-      "description": "Worked as a fullstack developer on both internal and external projects, using React, Node.js, and PostgreSQL. Developed scalable systems with a focus on performance and automated testing."
+    "univendas": {
+      "title": "Univendas",
+      "jobTitle": "infrastructure analyst",
+      "start_date": "10/2023",
+      "end_date": "08/2024",
+      "description": [
+        "Automated report generation for business decision-making using Python;",
+        "Provided internal support by troubleshooting hardware and software issues;",
+        "Performed maintenance and management of Windows servers;",
+        "Created and modified users, computers, GPOs, and other domain configurations."
+      ]
     },
     "inovai": {
       "title": "Inov.AI",
-      "start_date": "23/09/2024",
-      "end_date": "15/05/2025",
+      "jobTitle": "Junior Developer",
+      "start_date": "09/2024",
+      "end_date": "05/2025",
       "description": [
-        "Developed solutions in Python focusing on analysis and extraction of legal documents;",
-        "Created automations using Python, PostgreSQL, MongoDB, SQL Server;",
-        "Maintained an internal application built with Angular, Typescript, and ElasticSearch."
+        "Developed Python-based solutions focused on data analysis and extraction from legal documents;",
+        "Implemented automations using Python, PostgreSQL, MongoDB, SQL Server, ElasticSearch, and Kubernetes;",
+        "Created and maintained an internal knowledge base application using Angular, TypeScript, ElasticSearch, and CSS;",
+        "Developed and maintained a monitoring BOT integrated with Telegram using Python;",
+        "Worked remotely throughout the entire period as part of the company's development team."
       ]
     }
   }

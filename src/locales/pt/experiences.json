@@ -1,19 +1,29 @@
 {
   "title": "Experiências",
   "items": {
-    "empresa_x": {
-      "title": "Empresa X",
-      "start_date": "21/05/2021",
-      "description": "Atuei como desenvolvedor fullstack em projetos internos e externos, utilizando React, Node.js e PostgreSQL. Desenvolvi sistemas escaláveis com foco em performance e testes automatizados."
+    "univendas": {
+      "title": "Univendas",
+      "jobTitle": "Suporte de Infraestrutura",
+      "start_date": "10/2023",
+      "end_date": "08/2024",
+      "description": [
+        "Automatizei a geração de relatórios para tomada de decisão utilizando Python;",
+        "Atuei como suporte interno, solucionando problemas relacionados a hardware e software;",
+        "Realizei manutenções e gerenciamento de servidores Windows;",
+        "Criei e modifiquei usuários, computadores, GPOs e outras configurações de domínio."
+      ]
     },
     "inovai": {
       "title": "Inov.AI",
-      "start_date": "23/09/2024",
-      "end_date": "15/05/2025",
+      "jobTitle": "Desenvolvedor Júnior",
+      "start_date": "09/2024",
+      "end_date": "05/2025",
       "description": [
-        "Desenvolver soluções em Python, com foco em análise e extração de dados de documentos jurídicos;",
-        "Desenvolver automações através de tecnologias como: Python, PostgreSQL, MongoDB, SQL Server;",
-        "Responsável pela criação e manutenção de uma aplicação interna utilizando Angular, Typescript, ElasticSearch"
+        "Desenvolvi soluções em Python com foco em análise e extração de dados de documentos jurídicos;",
+        "Implementei automações utilizando Python, PostgreSQL, MongoDB, SQL Server, ElasticSearch e Kubernetes;",
+        "Fui responsável pela criação e manutenção de uma aplicação interna desenvolvida com Angular, TypeScript, ElasticSearch e CSS;",
+        "Desenvolvi e mantive um BOT de monitoramento com integração ao Telegram, utilizando Python;",
+        "Atuei remotamente durante todo o período na equipe de desenvolvimento da empresa."
       ]
     }
   }

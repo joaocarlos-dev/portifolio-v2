@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 
 type ExperienceCardType = {
   companyTitle: string;
+  jobTitle: string;
   companyStartDate: string;
   companyEndDate: string;
   companyDescription: string[];
@@ -14,6 +15,7 @@ type ExperienceCardType = {
 
 export function ExperienceCard({
   companyTitle,
+  jobTitle,
   companyDescription,
   companyStartDate,
   companyEndDate,
@@ -44,13 +46,19 @@ export function ExperienceCard({
       onClick={() => setIsOpen((prev) => !prev)}
     >
       <div className="h-[90px] flex px-6 items-center justify-between">
-        <h3 className="text-white font-semibold text-xl">
-          <TranslatedText ns="experiences" tKey={companyTitle} />
-        </h3>
+        <div className="flex flex-col">
+          <h3 className="text-white font-semibold text-xl">
+            <TranslatedText ns="experiences" tKey={companyTitle} />
+          </h3>
+          <h3 className="text-white font-semibold text-[1rem]">
+            <TranslatedText ns="experiences" tKey={jobTitle} />
+          </h3>
+        </div>
         <div className="flex gap-4">
           <p className="text-slate-800">
             <TranslatedText ns="experiences" tKey={companyStartDate} />
           </p>
+          -
           <p className="text-slate-800">
             <TranslatedText ns="experiences" tKey={companyEndDate} />
           </p>

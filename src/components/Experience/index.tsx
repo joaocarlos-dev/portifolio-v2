@@ -13,6 +13,10 @@ export function Experience() {
     returnObjects: true,
   }) as string[];
 
+  const univendasDescription = t("items.univendas.description", {
+    returnObjects: true,
+  }) as string[];
+
   return (
     <div className="pt-50 md:pt-80 min-h-screen">
       <div className="flex items-center">
@@ -34,12 +38,21 @@ export function Experience() {
         </div>
       </div>
       <div className="mt-4 h-[2px] w-[90%] mx-4 bg-pink-400 md:w-[100%] md:mx-0 rounded-full" />
-      <div className="pt-15 pb-15">
+      <div className="flex flex-col pt-15 pb-15 gap-5">
         <ExperienceCard
           companyTitle={"items.inovai.title"}
           companyStartDate={"items.inovai.start_date"}
           companyEndDate={"items.inovai.end_date"}
           companyDescription={InovaiDescription}
+          jobTitle={"items.inovai.jobTitle"}
+        />
+
+        <ExperienceCard
+          companyTitle={"items.univendas.title"}
+          companyStartDate={"items.univendas.start_date"}
+          companyEndDate={"items.univendas.end_date"}
+          companyDescription={univendasDescription}
+          jobTitle={"items.univendas.jobTitle"}
         />
       </div>
     </div>
