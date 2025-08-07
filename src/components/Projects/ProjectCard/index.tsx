@@ -21,7 +21,7 @@ export function ProjectCard({
   return (
     <div
       className={clsx(
-        "bg-gradient-to-t from-pink-400 via-purple-400 to-blue-500",
+        "bg-[radial-gradient(circle,_#3b82f6,_#8b5cf6,_#ec4899)]",
         "w-70 h-[350px] rounded-4xl hover:cursor-pointer hover:scale-105",
         "shadow shadow-black",
         "flex flex-col"
