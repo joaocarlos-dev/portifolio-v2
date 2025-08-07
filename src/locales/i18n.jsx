@@ -10,6 +10,8 @@ import ptCommon from "./pt/common.json";
 import enNavbar from "./en/navbar.json";
 import ptNavbar from "./pt/navbar.json";
 
+const navigatorLng = navigator.language;
+
 i18n.use(initReactI18next).init({
   resources: {
     en: {
@@ -25,7 +27,8 @@ i18n.use(initReactI18next).init({
       navbar: ptNavbar,
     },
   },
-  fallbackLng: "en",
+  lng: navigatorLng.includes("pt") ? "pt" : "en",
+  fallbackLng: "pt",
   interpolation: {
     escapeValue: false,
   },
