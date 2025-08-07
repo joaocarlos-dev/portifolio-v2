@@ -16,7 +16,7 @@ type MatrixRainingCodeProps = {
 };
 
 const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
-  characters = "0123456789",
+  characters = "abcdefghijklmnopqrstuvwxyz0123456789",
   fontSize = 20,
   columnWidth = 20,
   speed = 0.075,
