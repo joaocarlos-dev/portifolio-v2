@@ -20,6 +20,10 @@
     "portifolio": {
       "title": "Portifólio",
       "description": "Meu novo portifólio pessoal desenvolvido para apresentar sobre mim e meus conhecimentos como desenvolvedor fullstack."
+    },
+    "trees_everywhere": {
+      "title": "Trees Everywhere",
+      "description": "Projeto para gerenciar um banco de dados de árvores plantadas por voluntários, com controle de usuários associados a contas para visualização em grupo."
     }
   }
 }

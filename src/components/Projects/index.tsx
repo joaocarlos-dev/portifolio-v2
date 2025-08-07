@@ -14,6 +14,7 @@ import {
 } from "react-icons/ri";
 import {
   SiDart,
+  SiDjango,
   SiFastapi,
   SiPython,
   SiSqlite,
@@ -99,6 +100,18 @@ export function Projects() {
             <RiTailwindCssFill key="tailwind" />,
             <SiPython key="python" />,
             <SiFastapi key="fastapi" />,
+          ]}
+        />
+        <ProjectCard
+          imgUrl={"/images/projects/trees_everywhere.png"}
+          alt={"tres_everywhere_project_image"}
+          projectTitle={"items.trees_everywhere.title"}
+          projectDescription={"items.trees_everywhere.description"}
+          icons={[
+            <SiPython key="python" />,
+            <SiDjango key="django" />,
+            <RiHtml5Fill key="html5" />,
+            <RiTailwindCssFill key="tailwind" />,
           ]}
         />
         <ProjectCard

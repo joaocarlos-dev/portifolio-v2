@@ -20,6 +20,10 @@
     "portifolio": {
       "title": "Portifolio",
       "description": "My newest portifolio to talk more about me and show my skills as a fullstack developer."
+    },
+    "trees_everywhere": {
+      "title": "Trees Everywhere",
+      "description": "Project to manage a database of trees planted by volunteers, with user-account associations allowing group viewing."
     }
   }
 }
