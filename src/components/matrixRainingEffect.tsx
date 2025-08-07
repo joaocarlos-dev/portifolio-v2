@@ -19,12 +19,12 @@ const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
   characters = "0123456789",
   fontSize = 20,
   columnWidth = 20,
-  speed = 0.4,
+  speed = 0.05,
   trailLength = 100,
   lightColor = "#975eff",
   darkColor = "#975eff",
   trailOpacityStep = 0.1,
-  globalOpacity = 0.5,
+  globalOpacity = 0.3,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
