@@ -30,7 +30,6 @@ export function NavLinks() {
     "md:dark:hover:bg-violet-200 md:dark:hover:bg-violet-200",
     ""
   );
-
   return (
     <div
       className={clsx(
@@ -156,6 +155,19 @@ export function NavBar() {
             <NavButton onClick={toggleTheme}>
               {theme === "light" ? <SunIcon /> : <MoonStarIcon />}
             </NavButton>
+            <a
+              className={clsx(
+                "px-3",
+                "flex items-center justify-start gap-2 cursor-pointer",
+                "text-violet-100 font-semibold text-[0.9rem]",
+                "md:text-[1.1rem]",
+                "md:rounded-2xl rounded-xl py-1",
+                "md:dark:text-dark-text text-dark-background"
+              )}
+              href="#"
+            >
+              {"< />"}
+            </a>
           </div>
         </div>
       </div>
