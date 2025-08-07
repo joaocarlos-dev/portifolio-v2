@@ -13,6 +13,7 @@ type MatrixRainingCodeProps = {
   darkColor?: string;
   trailOpacityStep?: number;
   globalOpacity?: number;
+  charChangeInterval?: number;
 };
 
 const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
@@ -25,6 +26,7 @@ const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
   darkColor = "#975eff",
   trailOpacityStep = 0.1,
   globalOpacity = 0.3,
+  charChangeInterval = 100,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -36,6 +38,10 @@ const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
     let columns = Math.floor(width / columnWidth);
     const charArray = characters.split("");
     let drops: number[] = [];
+    const currentChars: string[] = new Array(columns).fill("");
+    const trailChars: string[][] = Array.from({ length: columns }, () =>
+      new Array(trailLength).fill("")
+    );
 
     const isDarkMode = window.matchMedia?.(
       "(prefers-color-scheme: dark)"
@@ -47,24 +53,36 @@ const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
       drops[i] = (Math.random() * height) / fontSize;
     }
 
+    let lastCharChangeTime = performance.now();
+
     const draw = () => {
       ctx.clearRect(0, 0, width, height);
 
       ctx.font = `${fontSize}px monospace`;
       ctx.textBaseline = "top";
 
+      const now = performance.now();
+      const shouldChangeChar = now - lastCharChangeTime > charChangeInterval;
+
       for (let i = 0; i < drops.length; i++) {
         const x = i * columnWidth;
         const y = drops[i] * fontSize;
 
-        const text = charArray[Math.floor(Math.random() * charArray.length)];
+        if (shouldChangeChar) {
+          currentChars[i] =
+            charArray[Math.floor(Math.random() * charArray.length)];
+
+          for (let j = 0; j < trailLength; j++) {
+            trailChars[i][j] =
+              charArray[Math.floor(Math.random() * charArray.length)];
+          }
+        }
 
         ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${globalOpacity})`;
-        ctx.fillText(text, x, y);
+        ctx.fillText(currentChars[i], x, y);
 
         for (let j = 1; j <= trailLength; j++) {
-          const fadeText =
-            charArray[Math.floor(Math.random() * charArray.length)];
+          const fadeText = trailChars[i][j - 1];
           const opacity = Math.max(0, 1 - j * trailOpacityStep);
           ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${opacity * globalOpacity})`;
           ctx.fillText(fadeText, x, y - j * fontSize);
@@ -75,6 +93,10 @@ const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
         }
 
         drops[i] += speed;
+      }
+
+      if (shouldChangeChar) {
+        lastCharChangeTime = now;
       }
     };
 
@@ -112,6 +134,7 @@ const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
     darkColor,
     lightColor,
     globalOpacity,
+    charChangeInterval,
   ]);
 
   return (
