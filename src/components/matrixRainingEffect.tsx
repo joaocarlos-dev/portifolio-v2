@@ -12,6 +12,7 @@ type MatrixRainingCodeProps = {
   lightColor?: string;
   darkColor?: string;
   trailOpacityStep?: number;
+  globalOpacity?: number;
 };
 
 const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
@@ -23,6 +24,7 @@ const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
   lightColor = "#975eff",
   darkColor = "#975eff",
   trailOpacityStep = 0.1,
+  globalOpacity = 0.5,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -39,6 +41,7 @@ const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
       "(prefers-color-scheme: dark)"
     ).matches;
     const baseColor = isDarkMode ? darkColor : lightColor;
+    const [r, g, b] = hexToRGB(baseColor);
 
     for (let i = 0; i < columns; i++) {
       drops[i] = (Math.random() * height) / fontSize;
@@ -55,16 +58,15 @@ const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
         const y = drops[i] * fontSize;
 
         const text = charArray[Math.floor(Math.random() * charArray.length)];
-        ctx.fillStyle = baseColor;
-        ctx.fillText(text, x, y);
 
-        const [r, g, b] = hexToRGB(baseColor);
+        ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${globalOpacity})`;
+        ctx.fillText(text, x, y);
 
         for (let j = 1; j <= trailLength; j++) {
           const fadeText =
             charArray[Math.floor(Math.random() * charArray.length)];
           const opacity = Math.max(0, 1 - j * trailOpacityStep);
-          ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${opacity})`;
+          ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${opacity * globalOpacity})`;
           ctx.fillText(fadeText, x, y - j * fontSize);
         }
 
@@ -109,6 +111,7 @@ const MatrixRainingCode: React.FC<MatrixRainingCodeProps> = ({
     trailOpacityStep,
     darkColor,
     lightColor,
+    globalOpacity,
   ]);
 
   return (
