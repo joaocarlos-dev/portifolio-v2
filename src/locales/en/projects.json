@@ -8,6 +8,10 @@
     "maismix": {
       "title": "MaisMix",
       "description": "A delivery scheduling and client management app."
+    },
+    "algvis": {
+      "title": "AlgVis",
+      "description": "An interactive platform to visualize algorithms and data structures in an animated and intuitive way."
     }
   }
 }

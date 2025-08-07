@@ -10,7 +10,13 @@ import {
   RiReactjsFill,
   RiTailwindCssFill,
 } from "react-icons/ri";
-import { SiDart, SiSqlite, SiTypescript } from "react-icons/si";
+import {
+  SiDart,
+  SiFastapi,
+  SiPython,
+  SiSqlite,
+  SiTypescript,
+} from "react-icons/si";
 
 export function Projects() {
   return (
@@ -65,11 +71,18 @@ export function Projects() {
           ]}
         />
         <ProjectCard
-          imgUrl={"/images/img_teste.jpg"}
-          alt={"teste"}
-          projectTitle={""}
-          projectDescription={""}
-          icons={[]}
+          imgUrl={"/images/projects/algvis.png"}
+          alt={"algvis_project_image"}
+          projectTitle={"items.algvis.title"}
+          projectDescription={"items.algvis.description"}
+          icons={[
+            <RiNextjsFill key="next" />,
+            <RiReactjsFill key="react" />,
+            <SiTypescript key="typescript" />,
+            <RiTailwindCssFill key="tailwind" />,
+            <SiPython key="python" />,
+            <SiFastapi key="fastapi" />,
+          ]}
         />
       </div>
     </div>

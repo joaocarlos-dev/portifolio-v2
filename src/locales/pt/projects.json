@@ -7,7 +7,11 @@
     },
     "maismix": {
       "title": "MaisMix",
-      "description": "Aplicativo para agendamento de entregas e gestão de clientes"
+      "description": "Aplicativo para agendamento de entregas e gestão de clientes."
+    },
+    "algvis": {
+      "title": "AlgVis",
+      "description": "Plataforma interativa para visualizar algoritmos e estruturas de dados de forma animada e intuitiva."
     }
   }
 }
