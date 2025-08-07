@@ -9,6 +9,8 @@ import enCommon from "./en/common.json";
 import ptCommon from "./pt/common.json";
 import enNavbar from "./en/navbar.json";
 import ptNavbar from "./pt/navbar.json";
+import enProjects from "./en/projects.json";
+import ptProjects from "./pt/projects.json";
 
 const navigatorLng = navigator.language;
 
@@ -19,12 +21,14 @@ i18n.use(initReactI18next).init({
       experiences: enExperiences,
       common: enCommon,
       navbar: enNavbar,
+      projects: enProjects,
     },
     pt: {
       about: ptAbout,
       experiences: ptExperiences,
       common: ptCommon,
       navbar: ptNavbar,
+      projects: ptProjects,
     },
   },
   lng: navigatorLng.includes("pt") ? "pt" : "en",

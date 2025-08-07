@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.12",
     "i18next": "^25.3.2",
