@@ -1,9 +1,9 @@
 {
   "title": "Meus projetos",
   "items": {
-    "project_1": {
-      "title": "titulo 1",
-      "description": "Aqui vai ter uma descrição curta do projeto tipo como a gente fez esse hamburguer menos o pao hahaha"
+    "the_blog": {
+      "title": "The Blog",
+      "description": "Um blog pessoal feito do zero pra estudar e aplicar frontend, backend e banco de dados com tecnologias modernas."
     }
   }
 }

@@ -2,6 +2,13 @@ import clsx from "clsx";
 import { TranslatedText } from "../TranslatedText";
 import { FloatingImage } from "../About/FloatingImage";
 import { ProjectCard } from "./ProjectCard";
+import {
+  RiNextjsFill,
+  RiNodejsFill,
+  RiReactjsFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
+import { SiSqlite, SiTypescript } from "react-icons/si";
 
 export function Projects() {
   return (
@@ -30,11 +37,34 @@ export function Projects() {
           "py-15 flex flex-wrap justify-center gap-5 md:gap-10 w-full"
         )}
       >
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard
+          imgUrl={"/images/projects/the_blog.png"}
+          alt={"the_blog_project_image"}
+          projectTitle={"items.the_blog.title"}
+          projectDescription={"items.the_blog.description"}
+          icons={[
+            <RiNextjsFill key="next" />,
+            <RiReactjsFill key="react" />,
+            <RiNodejsFill key="node" />,
+            <SiTypescript key="typescript" />,
+            <RiTailwindCssFill key="tailwind" />,
+            <SiSqlite key="sqlite" />,
+          ]}
+        />
+        <ProjectCard
+          imgUrl={"/images/img_teste.jpg"}
+          alt={"teste"}
+          projectTitle={""}
+          projectDescription={""}
+          icons={[]}
+        />
+        <ProjectCard
+          imgUrl={"/images/img_teste.jpg"}
+          alt={"teste"}
+          projectTitle={""}
+          projectDescription={""}
+          icons={[]}
+        />
       </div>
     </div>
   );
