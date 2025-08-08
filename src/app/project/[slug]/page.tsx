@@ -2,13 +2,12 @@ import { ProjectImagesCarousel } from "@/components/ImageSlider";
 import { TranslatedText } from "@/components/TranslatedText";
 import { projectImages } from "@/data/projectImages";
 
-export default async function ProjectPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const { slug } = params;
+type PageParamsProps = {
+  params: Promise<{ slug: string }>;
+};
 
+export default async function ProjectPage({ params }: PageParamsProps) {
+  const { slug } = await params;
   const images = projectImages[slug] || [];
 
   return (
@@ -32,5 +31,7 @@ export default async function ProjectPage({
 }
 
 export async function generateStaticParams() {
-  return Object.keys(projectImages).map((slug) => ({ slug }));
+  return Object.keys(projectImages).map((slug) => ({
+    slug: slug,
+  }));
 }
