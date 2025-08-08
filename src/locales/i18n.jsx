@@ -13,6 +13,8 @@ import enProjectsCards from "./en/projectsCards.json";
 import ptProjectsCards from "./pt/projectsCards.json";
 import enProjectDetails from "./en/project_details.json";
 import ptProjectDetails from "./pt/project_details.json";
+import enContact from "./en/contact.json";
+import ptContact from "./pt/contact.json";
 
 const navigatorLng = navigator.language;
 
@@ -25,6 +27,7 @@ i18n.use(initReactI18next).init({
       navbar: enNavbar,
       projects: enProjectsCards,
       project_details: enProjectDetails,
+      contact: enContact,
     },
     pt: {
       about: ptAbout,
@@ -33,6 +36,7 @@ i18n.use(initReactI18next).init({
       navbar: ptNavbar,
       projects: ptProjectsCards,
       project_details: ptProjectDetails,
+      contact: ptContact,
     },
   },
   lng: navigatorLng.includes("pt") ? "pt" : "en",
