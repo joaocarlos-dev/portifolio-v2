@@ -12,4 +12,11 @@ export const projectImages: Record<string, string[]> = {
     "/images/projects/maismix/3.png",
     "/images/projects/maismix/4.png",
   ],
+  portifolio: [
+    "/images/projects/portifolio/1.png",
+    "/images/projects/portifolio/2.png",
+    "/images/projects/portifolio/3.png",
+    "/images/projects/portifolio/4.png",
+  ],
+  algvis: ["/images/projects/algvis/1.png"],
 };

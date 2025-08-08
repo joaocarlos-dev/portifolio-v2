@@ -65,6 +65,7 @@ export function Projects() {
           ]}
         />
         <ProjectCard
+          path="portifolio"
           imgUrl={"/images/projectCard/portifolio.png"}
           alt={"portifolio_project_image"}
           projectTitle={"items.portifolio.title"}
@@ -90,6 +91,7 @@ export function Projects() {
           ]}
         />
         <ProjectCard
+          path="algvis"
           imgUrl={"/images/projectCard/algvis.png"}
           alt={"algvis_project_image"}
           projectTitle={"items.algvis.title"}
