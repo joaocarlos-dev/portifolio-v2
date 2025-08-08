@@ -49,6 +49,7 @@ export function Projects() {
         )}
       >
         <ProjectCard
+          path="the_blog"
           imgUrl={"/images/projectCard/the_blog.png"}
           alt={"the_blog_project_image"}
           projectTitle={"items.the_blog.title"}

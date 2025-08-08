@@ -1,6 +1,10 @@
+"use client";
+
 import { TranslatedText } from "@/components/TranslatedText";
 import clsx from "clsx";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 import { ReactNode } from "react";
 
 type ProjectCardProps = {
@@ -9,6 +13,7 @@ type ProjectCardProps = {
   projectTitle: string;
   projectDescription: string;
   icons: ReactNode[];
+  path?: string;
 };
 
 export function ProjectCard({
@@ -17,7 +22,15 @@ export function ProjectCard({
   projectTitle,
   projectDescription,
   icons,
+  path,
 }: ProjectCardProps) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    if (path) {
+      router.push(`/project/${path}`);
+    }
+  };
   return (
     <div
       className={clsx(
@@ -26,6 +39,7 @@ export function ProjectCard({
         "shadow shadow-black",
         "flex flex-col"
       )}
+      onClick={handleClick}
     >
       <div className="relative w-full h-[50%]">
         <Image

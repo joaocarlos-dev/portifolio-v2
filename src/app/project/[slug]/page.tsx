@@ -7,9 +7,8 @@ export default async function ProjectPage({
 }: {
   params: { slug: string };
 }) {
-  const { slug } = params; // Remova o await (params é síncrono)
+  const { slug } = params;
 
-  // Obtenha as imagens do mapeamento
   const images = projectImages[slug] || [];
 
   return (
