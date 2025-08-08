@@ -17,8 +17,16 @@ import { useTranslation } from "react-i18next";
 import "../../locales/i18n";
 import { useTheme } from "@/app/providers/ThemeProvider";
 import { TranslatedText } from "../TranslatedText";
+import { usePathname } from "next/navigation";
 
 export function NavLinks() {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
+  const getHref = (sectionId: string) => {
+    return isHomePage ? `#${sectionId}` : `/#${sectionId}`;
+  };
+
   const linkClasses = clsx(
     "px-3",
     "flex items-center justify-start gap-2 cursor-pointer",
@@ -37,19 +45,19 @@ export function NavLinks() {
         "md:flex md:flex-row md:mt-0 md:gap-20 md:flex-wrap md:pl-20 md:w-full"
       )}
     >
-      <a className={linkClasses} href="#about">
+      <a className={linkClasses} href={getHref("about")}>
         <TranslatedText ns="navbar" tKey={"about"} />
       </a>
-      <a className={linkClasses} href="#experiences">
+      <a className={linkClasses} href={getHref("experiences")}>
         <TranslatedText ns="navbar" tKey={"experiences"} />
       </a>
-      <a className={linkClasses} href="#projects">
+      <a className={linkClasses} href={getHref("projects")}>
         <TranslatedText ns="navbar" tKey={"projects"} />
       </a>
-      <a className={linkClasses} href="#contact">
+      <a className={linkClasses} href={getHref("contact")}>
         <TranslatedText ns="navbar" tKey={"contact"} />
       </a>
-      <a className={linkClasses} href="#curriculum">
+      <a className={linkClasses} href={getHref("curriculum")}>
         <TranslatedText ns="navbar" tKey={"curriculum"} />
       </a>
     </div>
