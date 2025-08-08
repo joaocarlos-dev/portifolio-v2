@@ -49,7 +49,7 @@ export function Projects() {
         )}
       >
         <ProjectCard
-          imgUrl={"/images/projects/the_blog.png"}
+          imgUrl={"/images/projectCard/the_blog.png"}
           alt={"the_blog_project_image"}
           projectTitle={"items.the_blog.title"}
           projectDescription={"items.the_blog.description"}
@@ -64,7 +64,7 @@ export function Projects() {
           ]}
         />
         <ProjectCard
-          imgUrl={"/images/projects/portifolio.png"}
+          imgUrl={"/images/projectCard/portifolio.png"}
           alt={"portifolio_project_image"}
           projectTitle={"items.portifolio.title"}
           projectDescription={"items.portifolio.description"}
@@ -77,7 +77,7 @@ export function Projects() {
           ]}
         />
         <ProjectCard
-          imgUrl={"/images/projects/maismix.png"}
+          imgUrl={"/images/projectCard/maismix.png"}
           alt={"maismix_project_image"}
           projectTitle={"items.maismix.title"}
           projectDescription={"items.maismix.description"}
@@ -88,7 +88,7 @@ export function Projects() {
           ]}
         />
         <ProjectCard
-          imgUrl={"/images/projects/algvis.png"}
+          imgUrl={"/images/projectCard/algvis.png"}
           alt={"algvis_project_image"}
           projectTitle={"items.algvis.title"}
           projectDescription={"items.algvis.description"}
@@ -103,7 +103,7 @@ export function Projects() {
           ]}
         />
         <ProjectCard
-          imgUrl={"/images/projects/trees_everywhere.png"}
+          imgUrl={"/images/projectCard/trees_everywhere.png"}
           alt={"tres_everywhere_project_image"}
           projectTitle={"items.trees_everywhere.title"}
           projectDescription={"items.trees_everywhere.description"}
@@ -115,7 +115,7 @@ export function Projects() {
           ]}
         />
         <ProjectCard
-          imgUrl={"/images/projects/first_portifolio.png"}
+          imgUrl={"/images/projectCard/first_portifolio.png"}
           alt={"first_portifolio_project_image"}
           projectTitle={"items.angular_portifolio.title"}
           projectDescription={"items.angular_portifolio.description"}
