@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { TranslatedText } from "../TranslatedText";
 import clsx from "clsx";
-import { GrGithub, GrLinkedin } from "react-icons/gr";
+import { GrDocument, GrGithub, GrLinkedin, GrMail } from "react-icons/gr";
 
 export function Header() {
   return (
@@ -31,6 +31,24 @@ export function Header() {
                 href={"https://www.linkedin.com/in/joao-henrique-jorge-carlos/"}
               >
                 <GrLinkedin size={60} />
+              </a>
+            </button>
+            <button>
+              <a
+                className="text-dark-background dark:text-white"
+                target="_blank"
+                href={"mailto:joaohenriquejorgecarlos@gmail.com"}
+              >
+                <GrMail size={60} />
+              </a>
+            </button>
+            <button>
+              <a
+                className="text-dark-background dark:text-white"
+                target="_blank"
+                href={"https://flowcv.com/resume/t5l86svd7vvr"}
+              >
+                <GrDocument size={60} />
               </a>
             </button>
           </div>

@@ -10,7 +10,7 @@ import {
 import { NavButton } from "./NavButton";
 import clsx from "clsx";
 import { useState } from "react";
-import { GrGithub } from "react-icons/gr";
+import { GrDocument, GrGithub, GrMail } from "react-icons/gr";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { NavDropdownButton } from "./NavDropdownButton";
 import { useTranslation } from "react-i18next";
@@ -57,9 +57,6 @@ export function NavLinks() {
       <a className={linkClasses} href={getHref("contact")}>
         <TranslatedText ns="navbar" tKey={"contact"} />
       </a>
-      <a className={linkClasses} href={getHref("curriculum")}>
-        <TranslatedText ns="navbar" tKey={"curriculum"} />
-      </a>
     </div>
   );
 }
@@ -100,7 +97,7 @@ export function NavBar() {
 
             <NavLinks />
 
-            <div className="flex mb-4 [&_svg]:text-white">
+            <div className="flex flex-wrap mb-4 [&_svg]:text-white">
               <NavButton>
                 <a target="_blank" href={"https://github.com/joaocarlos-dev"}>
                   <GrGithub size={30} />
@@ -114,6 +111,24 @@ export function NavBar() {
                   }
                 >
                   <LiaLinkedinIn size={30} />
+                </a>
+              </NavButton>
+              <NavButton>
+                <a
+                  className="text-dark-background dark:text-white"
+                  target="_blank"
+                  href={"mailto:joaohenriquejorgecarlos@gmail.com"}
+                >
+                  <GrMail size={30} />
+                </a>
+              </NavButton>
+              <NavButton>
+                <a
+                  className="text-dark-background dark:text-white"
+                  target="_blank"
+                  href={"https://flowcv.com/resume/t5l86svd7vvr"}
+                >
+                  <GrDocument size={30} />
                 </a>
               </NavButton>
             </div>
