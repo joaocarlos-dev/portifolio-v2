@@ -19,7 +19,11 @@ export async function SingleProject({ params }: PageParamsProps) {
       <div className="flex flex-row items-center gap-8">
         <h1 className="text-4xl md:text-7xl font-bold text-dark-background dark:text-white">
           {projectsData[slug]?.website ? (
-            <a href={websiteLink} className="underline decoration-3">
+            <a
+              href={websiteLink}
+              target="_blank"
+              className="underline decoration-3"
+            >
               <TranslatedText ns="project_details" tKey={`${slug}.title`} />
             </a>
           ) : (

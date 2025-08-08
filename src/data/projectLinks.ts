@@ -12,4 +12,8 @@ export const projectsData: Record<string, { github: string; website: string }> =
       github: "https://github.com/joaocarlos-dev/AlgVis",
       website: "https://alg-vis.vercel.app/",
     },
+    trees_everywhere: {
+      github: "https://github.com/joaocarlos-dev/trees_everywhere",
+      website: "",
+    },
   };

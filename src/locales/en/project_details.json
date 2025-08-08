@@ -14,5 +14,9 @@
   "algvis": {
     "title": "AlgVis",
     "long_description": "AlgVis is an interactive educational platform designed to make learning algorithms and data structures more intuitive through animated visualizations. It allows users to observe in real time the operation of various algorithms, such as Bubble Sort and Quick Sort, as well as generate random arrays, control execution speed, and access step-by-step explanations.\n\nThe frontend was built with React, Next.js, TypeScript, TailwindCSS, and Framer Motion, ensuring a modern, responsive design with smooth animations. The backend uses Python and FastAPI, providing a fast and scalable foundation for running and integrating algorithms.\n\nThe project organizes algorithms into different categories and keeps the implementations in a separate repository, allowing for easy maintenance and expansion."
+  },
+  "trees_everywhere": {
+    "title": "Trees Everywhere",
+    "long_description": "Trees Everywhere is a project developed as part of a challenge for a junior backend developer position, aimed at maintaining a database of trees planted by volunteers around the world. Users can be linked to one or more accounts, allowing them to view trees planted by the group of users in the same account.\n\nImplemented features include: admin pages for registering and managing users, accounts, and plants; detailed views of species and planted trees; authentication and permission controls ensuring that each user can only see their own trees or those of the accounts they belong to; and the ability to add newly planted trees.\n\nThe system provides a REST API documented with Swagger, enabling data consumption in JSON format. Automated tests validate business rules and views, including access control scenarios and methods for linking trees to users.\n\nThe interface was styled with Tailwind CSS to ensure a clean, responsive, and modern design."
   }
 }

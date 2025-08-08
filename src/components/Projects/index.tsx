@@ -107,6 +107,7 @@ export function Projects() {
           ]}
         />
         <ProjectCard
+          path="trees_everywhere"
           imgUrl={"/images/projectCard/trees_everywhere.png"}
           alt={"tres_everywhere_project_image"}
           projectTitle={"items.trees_everywhere.title"}

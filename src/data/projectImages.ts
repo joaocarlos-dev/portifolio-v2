@@ -19,4 +19,11 @@ export const projectImages: Record<string, string[]> = {
     "/images/projects/portifolio/4.png",
   ],
   algvis: ["/images/projects/algvis/1.png"],
+  trees_everywhere: [
+    "/images/projects/trees_everywhere/1.png",
+    "/images/projects/trees_everywhere/2.png",
+    "/images/projects/trees_everywhere/3.png",
+    "/images/projects/trees_everywhere/4.png",
+    "/images/projects/trees_everywhere/5.png",
+  ],
 };
