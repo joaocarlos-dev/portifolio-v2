@@ -78,6 +78,7 @@ export function Projects() {
           ]}
         />
         <ProjectCard
+          path="maismix"
           imgUrl={"/images/projectCard/maismix.png"}
           alt={"maismix_project_image"}
           projectTitle={"items.maismix.title"}
