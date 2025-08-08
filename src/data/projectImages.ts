@@ -26,4 +26,11 @@ export const projectImages: Record<string, string[]> = {
     "/images/projects/trees_everywhere/4.png",
     "/images/projects/trees_everywhere/5.png",
   ],
+  first_portifolio: [
+    "/images/projects/first_portifolio/1.png",
+    "/images/projects/first_portifolio/2.png",
+    "/images/projects/first_portifolio/3.png",
+    "/images/projects/first_portifolio/4.png",
+    "/images/projects/first_portifolio/5.png",
+  ],
 };

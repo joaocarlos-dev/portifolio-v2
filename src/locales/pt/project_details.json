@@ -18,5 +18,9 @@
   "trees_everywhere": {
     "title": "Trees Everywhere",
     "long_description": "O Trees Everywhere é um projeto desenvolvido como desafio para uma vaga de desenvolvedor backend júnior, com o objetivo de manter um banco de dados de árvores plantadas por voluntários ao redor do mundo. Usuários podem estar associados a uma ou mais contas, visualizando as árvores plantadas pelo grupo de usuários da mesma conta.\n\nEntre as funcionalidades implementadas estão: páginas de administração para cadastro e gerenciamento de usuários, contas e plantas; visualização detalhada de espécies e árvores plantadas; autenticação e controle de permissões para garantir que cada usuário veja apenas suas próprias árvores ou as das contas das quais participa; e adição de novas árvores plantadas.\n\nO sistema conta com uma API REST documentada com Swagger, permitindo o consumo dos dados em formato JSON. Testes automatizados validam o correto funcionamento das regras de negócio e das views, incluindo cenários de controle de acesso e métodos para associar árvores a usuários.\n\nA interface foi estilizada com Tailwind CSS para garantir um design limpo, responsivo e moderno."
+  },
+  "first_portifolio": {
+    "title": "Primeiro portfólio",
+    "long_description": "Projeto em Angular desenvolvido para apresentar informações profissionais, experiências, habilidades e projetos pessoais de forma organizada e responsiva.\n\nO objetivo principal é servir como portfólio pessoal, exibindo seções como informações sobre mim, experiências profissionais, projetos e contato.\n\nAs tecnologias utilizadas incluem Angular 19, TypeScript, HTML5 e Tailwind CSS, garantindo um design moderno e responsivo."
   }
 }

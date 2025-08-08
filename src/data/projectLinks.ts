@@ -16,4 +16,8 @@ export const projectsData: Record<string, { github: string; website: string }> =
       github: "https://github.com/joaocarlos-dev/trees_everywhere",
       website: "",
     },
+    first_portifolio: {
+      github: "https://github.com/Ja1zinh0/Angular-portifolio",
+      website: "https://joao-h.vercel.app/",
+    },
   };

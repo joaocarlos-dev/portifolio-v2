@@ -120,6 +120,7 @@ export function Projects() {
           ]}
         />
         <ProjectCard
+          path="first_portifolio"
           imgUrl={"/images/projectCard/first_portifolio.png"}
           alt={"first_portifolio_project_image"}
           projectTitle={"items.angular_portifolio.title"}
