@@ -1,6 +1,5 @@
 "use client";
 
-import { RiMailFill } from "react-icons/ri";
 import { TranslatedText } from "../TranslatedText";
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
@@ -63,15 +62,12 @@ export function Contact() {
         <h1 className="text-4xl md:text-7xl">
           <TranslatedText ns="contact" tKey={"title"} />
         </h1>
-        <div className="hidden md:text-8xl md:flex">
-          <RiMailFill />
-        </div>
       </div>
       <div className="mt-4 h-[2px] w-[90%] bg-pink-400 md:w-[100%] md:mx-0 rounded-full" />
       <div className="p-4 mx-auto bg-dark-background dark:bg-white mt-10">
         <form className="space-y-5" onSubmit={handleSubmit}>
           <div>
-            <label className="text-sm text-white dark:text-dark-background font-medium mb-2 block">
+            <label className="text-sm text-white dark:text-dark-background mb-2 block font-semibold">
               <TranslatedText ns="contact" tKey={"name"} />
             </label>
             <input
@@ -89,7 +85,7 @@ export function Contact() {
             />
           </div>
           <div>
-            <label className="text-sm text-white dark:text-dark-background font-medium mb-2 block">
+            <label className="text-sm text-white dark:text-dark-background mb-2 block font-semibold">
               Email
             </label>
             <input
@@ -108,7 +104,7 @@ export function Contact() {
             />
           </div>
           <div>
-            <label className="text-sm text-white dark:text-dark-background font-medium mb-2 block">
+            <label className="text-sm text-white dark:text-dark-background mb-2 block font-semibold">
               <TranslatedText ns="contact" tKey={"subject"} />
             </label>
             <input
@@ -126,7 +122,7 @@ export function Contact() {
             />
           </div>
           <div>
-            <label className="text-sm text-white dark:text-dark-background font-medium mb-2 block">
+            <label className="text-sm text-white dark:text-dark-background mb-2 block font-semibold">
               <TranslatedText ns="contact" tKey={"message"} />
             </label>
             <textarea
@@ -147,7 +143,7 @@ export function Contact() {
             type="submit"
             className={clsx(
               "text-dark-background bg-white dark:bg-dark-background dark:text-white",
-              "font-medium hover:bg-slate-300 dark:hover:bg-violet-950",
+              "font-semibold hover:bg-slate-300 dark:hover:bg-violet-950",
               "tracking-wide text-sm px-4 py-2.5 w-full border-0 outline-0 cursor-pointer"
             )}
           >

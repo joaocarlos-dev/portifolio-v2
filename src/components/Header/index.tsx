@@ -21,7 +21,7 @@ export function Header() {
                 target="_blank"
                 href={"https://github.com/joaocarlos-dev"}
               >
-                <GrGithub size={60} />
+                <GrGithub size={40} />
               </a>
             </button>
             <button>
@@ -30,7 +30,7 @@ export function Header() {
                 target="_blank"
                 href={"https://www.linkedin.com/in/joao-henrique-jorge-carlos/"}
               >
-                <GrLinkedin size={60} />
+                <GrLinkedin size={40} />
               </a>
             </button>
             <button>
@@ -39,7 +39,7 @@ export function Header() {
                 target="_blank"
                 href={"mailto:joaohenriquejorgecarlos@gmail.com"}
               >
-                <GrMail size={60} />
+                <GrMail size={40} />
               </a>
             </button>
             <button>
@@ -48,7 +48,7 @@ export function Header() {
                 target="_blank"
                 href={"https://flowcv.com/resume/t5l86svd7vvr"}
               >
-                <GrDocument size={60} />
+                <GrDocument size={40} />
               </a>
             </button>
           </div>

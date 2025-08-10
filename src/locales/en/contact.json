@@ -3,6 +3,7 @@
   "name": "Name",
   "enter_name": "Enter Name",
   "subject": "Subject",
+  "enter_email": "Enter Email",
   "enter_subject": "Enter Subject",
   "message": "Message",
   "enter_message": "Enter Message"

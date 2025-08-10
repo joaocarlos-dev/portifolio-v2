@@ -3,6 +3,7 @@
   "name": "Nome",
   "enter_name": "Digite o nome",
   "subject": "Assunto",
+  "enter_email": "Digite o email",
   "enter_subject": "Digite o assunto",
   "message": "Mensagem",
   "enter_message": "Digite a mensagem"
