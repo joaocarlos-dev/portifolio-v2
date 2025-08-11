@@ -64,7 +64,7 @@ export function Contact() {
         </h1>
       </div>
       <div className="mt-4 h-[2px] w-[90%] bg-pink-400 md:w-[100%] md:mx-0 rounded-full" />
-      <div className="p-4 mx-auto bg-dark-background dark:bg-white mt-10">
+      <div className="p-4 mx-auto bg-dark-background dark:bg-white mt-10 rounded-2xl">
         <form className="space-y-5" onSubmit={handleSubmit}>
           <div>
             <label className="text-sm text-white dark:text-dark-background mb-2 block font-semibold">
@@ -79,7 +79,7 @@ export function Contact() {
               onChange={handleChange}
               className={clsx(
                 "w-full py-2.5 px-4 text-slate-900",
-                " dark:bg-gray-100 bg-white border border-gray-200",
+                " dark:bg-gray-100 bg-white border border-gray-200 rounded-3xl",
                 "dark:focus:border-slate-900 focus:border-pink-700 text-sm outline-0 transition-all"
               )}
             />
@@ -98,7 +98,7 @@ export function Contact() {
               onChange={handleChange}
               className={clsx(
                 "w-full py-2.5 px-4 text-slate-900",
-                " dark:bg-gray-100 bg-white border border-gray-200",
+                " dark:bg-gray-100 bg-white border border-gray-200 rounded-3xl",
                 "dark:focus:border-slate-900 focus:border-pink-700 text-sm outline-0 transition-all"
               )}
             />
@@ -116,7 +116,7 @@ export function Contact() {
               onChange={handleChange}
               className={clsx(
                 "w-full py-2.5 px-4 text-slate-900",
-                " dark:bg-gray-100 bg-white border border-gray-200",
+                " dark:bg-gray-100 bg-white border border-gray-200 rounded-3xl",
                 "dark:focus:border-slate-900 focus:border-pink-700 text-sm outline-0 transition-all"
               )}
             />
@@ -133,7 +133,7 @@ export function Contact() {
               value={formData.message}
               onChange={handleChange}
               className={clsx(
-                "w-full px-4 text-slate-900 dark:bg-gray-100 bg-white border",
+                "w-full px-4 text-slate-900 dark:bg-gray-100 bg-white border rounded-3xl",
                 "border-gray-200 dark:focus:border-slate-900 focus:border-pink-700",
                 "text-sm pt-3 outline-0 transition-all"
               )}
@@ -142,7 +142,7 @@ export function Contact() {
           <button
             type="submit"
             className={clsx(
-              "text-dark-background bg-white dark:bg-dark-background dark:text-white",
+              "text-dark-background bg-white dark:bg-dark-background dark:text-white rounded-3xl",
               "font-semibold hover:bg-slate-300 dark:hover:bg-violet-950",
               "tracking-wide text-sm px-4 py-2.5 w-full border-0 outline-0 cursor-pointer"
             )}
