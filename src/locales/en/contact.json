@@ -6,5 +6,6 @@
   "enter_email": "Enter Email",
   "enter_subject": "Enter Subject",
   "message": "Message",
-  "enter_message": "Enter Message"
+  "enter_message": "Enter Message",
+  "send": "Send"
 }
