@@ -15,7 +15,7 @@ Este é o meu portfólio pessoal, desenvolvido com **React**, **Next.js** e **Ta
 - Sessão de **Sobre mim** com informações sobre minha trajetória.
 - Listagem dos **projetos desenvolvidos**, com descrições e links para repositórios/demonstrações.
 - Listagem das minhas **experiências profissionais** anteriores.
-- Formulário de **contato** integrado com Formspree (ou outro serviço).
+- Formulário de **contato** integrado com Formspree.
 - Layout **totalmente responsivo** para diferentes tamanhos de tela.
 - Suporte a **tema claro/escuro**
 
